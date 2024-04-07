@@ -25,3 +25,16 @@
  justify-content: center;
  border:1px solid black;
 }
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-infoul li {
+  margin: 25px;
+}
+
+.contact-info ul li i {
+  font-size: 25px;
+  color: #232526;
+  
+}
