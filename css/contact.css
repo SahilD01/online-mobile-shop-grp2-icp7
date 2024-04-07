@@ -88,11 +88,19 @@
   }
   .location-part{
     border:1px solid black;
+    padding:10px;
   }
   .email-part{
     border:1px solid black;
+    padding:10px;
     margin: 10px auto;
   }
   .call-part{
+    border:1px solid black;
+    padding:10px;
+  }
+  .feedback-form{
+    height:auto;
+    width:100%;
     border:1px solid black;
   }
