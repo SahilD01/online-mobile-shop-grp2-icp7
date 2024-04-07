@@ -26,9 +26,7 @@
  justify-content: center;
 
 }
-.header{  
 
-}
 #location{
   color:crimson;
 
@@ -118,11 +116,13 @@
   /* style.css */
 
 .star-cont{
-  width:100%;
+  width:35%;
   height:auto;
-  padding:10px;
- 
-margin:10px auto;
+  padding:0px 10px;
+  background-color:  #232323;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin:10px auto;
 
 }
   .star-card {
@@ -138,26 +138,26 @@ margin:10px auto;
   }
    
   .star {
-    font-size: 10vh;
-    cursor: pointer;
+     font-size: 10vh;
+     cursor: pointer;
   }
    
   .one {
-    color: rgb(255, 0, 0);
+     color: rgb(255, 0, 0);
   }
    
   .two {
-    color: rgb(255, 106, 0);
+     color: rgb(255, 106, 0);
   }
    
   .three {
-    color: rgb(251, 255, 120);
+     color: rgb(251, 255, 120);
   }
    
   .four {
-    color: rgb(255, 255, 0);
+     color: rgb(255, 255, 0);
   }
    
   .five {
-    color: rgb(24, 159, 14);
+     color: rgb(24, 159, 14);
   }
