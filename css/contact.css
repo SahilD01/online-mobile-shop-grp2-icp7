@@ -1,0 +1,98 @@
+/*contact main part start */
+.main-cont {
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:0px;
+  margin-bottom:100px;
+ display: block;
+
+  }
+  .img-div{
+    width:100%;
+    height:auto;
+    
+  }
+  .banner-img{
+    height:350px;
+    width:100%;
+  }
+.contact-info{
+ margin:40px auto;
+ text-align: center;
+ justify-content: center;
+ border:1px solid black;
+}
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-infoul li {
+  margin: 25px;
+}
+
+.contact-info ul li i {
+  font-size: 25px;
+  color: #232526;
+  
+}
+#location{
+  color:crimson;
+}
+#email{
+  color:blue;
+}
+#call{
+  color:green;
+}
+
+#location:hover{
+  color:crimson;
+  
+  transform:translateY(2px);
+}
+
+#email:hover{
+  color:blue;
+
+  transform:translateY(2px);
+}
+
+#call:hover{
+  color:green;
+ 
+  transform:translateY(2px);
+}
+.strong {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color:#0000;
+}
+
+.p {
+  font-size: 14px;
+  margin-left: 35px;
+  margin-top: 10px;
+  color:#0000;
+}
+  .second-part{
+  border:1px solid black;
+  display:flex;
+  height: auto;
+  width:100%;
+  padding: 30px 200px;
+  justify-content: center;
+  text-align: center;
+  }
+  .location-part{
+    border:1px solid black;
+  }
+  .email-part{
+    border:1px solid black;
+    margin: 10px auto;
+  }
+  .call-part{
+    border:1px solid black;
+  }
