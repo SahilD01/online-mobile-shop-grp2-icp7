@@ -10,11 +10,10 @@ body {
  }
 .product-card{
     background-color: white;
-    width: 250px;
-   
+    width: 250px;  
     border-radius: 20px;
     box-shadow: 0 0 10px;
-    display: block;
+    display: inline-block;
     margin: 20px auto;
     padding: 3px;
 }

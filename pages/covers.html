@@ -58,6 +58,8 @@
             </div>
         </nav>
         <!-- Navbar -->
+
+
     <div class="product-card">
         <img src="../img/covers/cvr1.png" class="card1-img"/>
 
@@ -79,10 +81,40 @@
 
          <img src="../img/covers/plus (1).png"class="qnty" onclick="inc()"/>
 
+        </div>
+        <button type="button" class="btn btn-dark">Buy Now</button>
+
+      </div>
+      </div>
+    </div>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+      <!--card 2-->
+      <div class="product-card">
+        <img src="../img/covers/cvr2.png" class="card1-img"/>
+
+        <div class="card-body">
+       <p class="product-dis">
+        Mustache Vector Soft Silicone Case for Vivo Y56 (5G)
+       </p>
+       <p class="price">
+        ₹ 199/-
+       </p>
+         
+       <p id="qnty">1 x 199 </p>
+       <p id="total">Total: 199</p>
+
+       <div class="qnty-btn-con">
+         <img src="../img/covers/minus (1).png" class="qnty" onclick="dec()"/>
+
+         <span class="text" id="text">1</span>
+
+         <img src="../img/covers/plus (1).png"class="qnty" onclick="inc()"/>
+
       </div>
       <button type="button" class="btn btn-dark">Buy Now</button>
        </div>
     </div>
+  </div>
 
     <script>
       function inc(){
@@ -107,6 +139,44 @@
             const quantityText = document.getElementById('qnty-text');
             const showQuantity = document.getElementById("show-qnty");
             const showTotal = document.getElementById("show-total");
+
+             let quantity = parseInt(quantityText.innerText);
+
+             if(quantity > 1)
+             {
+             quantityText.innerText = --quantity;}
+            else
+            {
+                alert("You can't add less than 1 items");
+            }
+            showQuantity.innerText = `${quantity}  X 159`;
+            showTotal.innerText = `Total : ${quantity * 159}`
+            
+        }
+         <!--Logic2-->
+
+        function inc(){
+            const quantityText = document.getElementById('text');
+            const showQuantity = document.getElementById("qnty");
+            const showTotal = document.getElementById("total");
+
+            let quantity = parseInt(quantityText.innerText);
+            
+            if(quantity<10)
+            {
+            quantityText.innerText = ++quantity;
+            } 
+            else{
+                alert("You can't add more than 10 items");
+            }
+            showQuantity.innerText = `${quantity}  X 159`;
+            showTotal.innerText = `Total : ${quantity * 159}`
+      }
+      function dec(){
+
+            const quantityText = document.getElementById('text');
+            const showQuantity = document.getElementById("qnty");
+            const showTotal = document.getElementById("total");
 
              let quantity = parseInt(quantityText.innerText);
 
