@@ -102,6 +102,10 @@
     width:400px;
     margin:30px;
   }
+  .image-part{
+  margin-top: 100px;
+    height:500px;
+  }
   .feedback-form{
     height:auto;
     width:100%;
