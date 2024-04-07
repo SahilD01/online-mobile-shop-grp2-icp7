@@ -101,16 +101,27 @@
     margin:30px;
   }
 
-  .text{
+  .text1{
     color:black;
     font-size: 50px;
   text-align: center;
   justify-content: center;
 
   }
-  .text-cont{
-
+  
+  .text2{
+    color:black;
+font-size: 30px;
+ text-align: center;
+  justify-content: center;
+ padding:10px;
+ border: 1px solid black;
+ margin-bottom: 20px;
+ background-color: #232323;
+ color: white;
+ 
   }
+ 
   .image-part{
   margin-top: 100px;
     height:500px;
