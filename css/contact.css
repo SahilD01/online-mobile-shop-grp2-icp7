@@ -1,0 +1,163 @@
+/*contact main part start */
+.main-cont {
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:0px;
+  margin-bottom:100px;
+ display: block;
+
+
+  }
+  .img-div{
+    width:100%;
+    height:auto;
+    
+  }
+  .banner-img{
+    height:350px;
+    width:100%;
+  }
+.contact-info{
+ margin:40px auto;
+ text-align: center;
+ justify-content: center;
+
+}
+.header{  
+
+}
+#location{
+  color:crimson;
+
+}
+#email{
+  color:blue;
+  
+}
+#call{
+  color:green;
+}
+.icon-style{
+  font-size: 50px;
+}
+#location:hover{
+  color:crimson;
+  
+  transform:translateY(2px);
+}
+
+
+#email:hover{
+  color:blue;
+
+  transform:translateY(2px);
+}
+
+#call:hover{
+  color:green;
+ 
+  transform:translateY(2px);
+}
+.icon-name{
+ color:black;
+ font-size: 20px;
+ font-family: 'Nunito Sans', sans-serif;
+ margin-top: 10px;
+}
+
+.p {
+  font-size: 14px;
+  margin-left: 35px;
+  margin-top: 10px;
+  color:#0000;
+}
+  .second-part{
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display:flex;
+  height: auto;
+  width:100%;
+  padding: 30px 200px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom:30px;
+  }
+  .location-part{
+    
+    padding:10px;
+    width:400px;
+    margin:30px;
+  }
+  .email-part{
+
+    padding:10px;
+    width:400px;
+    margin:30px;
+  }
+  .call-part{
+  
+    padding:10px;
+    width:400px;
+    margin:30px;
+  }
+
+  .info-part{
+
+  }
+  .image-part{
+  margin-top: 100px;
+    height:500px;
+  }
+  .feedback-form{
+    height:auto;
+    width:100%;
+    border:1px solid #0000;
+  }
+  /* style.css */
+
+.star-cont{
+  width:100%;
+  height:auto;
+  padding:10px;
+ 
+margin:10px auto;
+
+}
+  .star-card {
+    max-width: 33rem;
+    background: #fff;
+    margin: 10px auto;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 0.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+   
+  .star {
+    font-size: 10vh;
+    cursor: pointer;
+  }
+   
+  .one {
+    color: rgb(255, 0, 0);
+  }
+   
+  .two {
+    color: rgb(255, 106, 0);
+  }
+   
+  .three {
+    color: rgb(251, 255, 120);
+  }
+   
+  .four {
+    color: rgb(255, 255, 0);
+  }
+   
+  .five {
+    color: rgb(24, 159, 14);
+  }
