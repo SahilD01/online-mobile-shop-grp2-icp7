@@ -102,6 +102,10 @@
     width:400px;
     margin:30px;
   }
+
+  .info-part{
+
+  }
   .image-part{
   margin-top: 100px;
     height:500px;
@@ -110,4 +114,50 @@
     height:auto;
     width:100%;
     border:1px solid #0000;
+  }
+  /* style.css */
+
+.star-cont{
+  width:100%;
+  height:auto;
+  padding:10px;
+  border: 1px solid black;
+margin:10px auto;
+
+}
+  .star-card {
+    max-width: 33rem;
+    background: #fff;
+    margin: 10px auto;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 0.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+   
+  .star {
+    font-size: 10vh;
+    cursor: pointer;
+  }
+   
+  .one {
+    color: rgb(255, 0, 0);
+  }
+   
+  .two {
+    color: rgb(255, 106, 0);
+  }
+   
+  .three {
+    color: rgb(251, 255, 120);
+  }
+   
+  .four {
+    color: rgb(255, 255, 0);
+  }
+   
+  .five {
+    color: rgb(24, 159, 14);
   }
