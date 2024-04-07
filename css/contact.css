@@ -8,7 +8,7 @@
   margin-top:0px;
   margin-bottom:100px;
  display: block;
- font-family: 'Nunito Sans', sans-serif;
+
 
   }
   .img-div{
@@ -25,10 +25,9 @@
  text-align: center;
  justify-content: center;
 
- font-family: 'Nunito Sans', sans-serif;
 }
 .header{  
-  font-family: 'Nunito Sans', sans-serif;
+
 }
 #location{
   color:crimson;
@@ -66,6 +65,7 @@
  color:black;
  font-size: 20px;
  font-family: 'Nunito Sans', sans-serif;
+ margin-top: 10px;
 }
 
 .p {
@@ -105,5 +105,5 @@
   .feedback-form{
     height:auto;
     width:100%;
-    border:1px solid black;
+    border:1px solid #0000;
   }
