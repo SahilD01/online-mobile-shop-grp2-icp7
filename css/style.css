@@ -1,103 +1,13 @@
-/*Footer design */
-
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
+/* common btn */
+.btn{
+    color: #ffff;
+    font-size: 14px;
+    background: black;
+    border: 1px solid ;
+    padding: 6px 20px;
+    margin-top: 5px;
+    border-radius: 20px;
 }
-ul{
-    list-style: none;
-}
-.container{
-    max-width: 1170px;
-}
-.footer{
-     background-color: #232323;
-     padding: 70px 50px;
-     font-family: 'Nunito Sans', sans-serif;
-     margin-top: 30px;
-}
-.footer-col{
-    width: 25%;
-    padding: 0 15px;
-}
-.footer-col h4{
-    font-size: 20px;
-    color: #ffffff;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    position: relative;
-}
-.footer-col h4::before{
-    content: '';
-    position: absolute;
-    Left:0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
- }
-.footer-col ul li{
-    margin-bottom: 10px;
-}
-.footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-}
-.footer-col ul li a:hover{
-    color: #ffffff;
-    margin-left: 7px;
-}
-.social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
-    text-align: center;
-    Line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-}
-
-.social-links a:hover{
-    color: #232323;
-    background-color: #fff;
-}
-
-/*Responsive*/
-@media(max-width: 767px) {
-    .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-    }
-    }
-    @media(max-width: 415px){
-    .footer-col {
-    width: 100%;
-    }
-    }
-
-
-.footer-contact{
-    color: #ffffff;
-    margin: 10px 0;
-    text-decoration: none;
-    height: 25px;
-    letter-spacing: .5px;
-}
-.footer-links{
-    text-decoration: none;
-    margin: 0 20px;
-    color: #bbbb;
-    text-transform: lowercase;
-}
-.footer-links:hover{
-    color: #ffffff;   
+.center{
+    margin: 0 50px;
 }
