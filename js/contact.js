@@ -3,7 +3,6 @@ let stars =
 document.getElementsByClassName("star");
 let output = 
 document.getElementById("output");
-
 // Funtion to update rating
 function rating(n) {
 remove();
