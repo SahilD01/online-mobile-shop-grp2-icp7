@@ -13,3 +13,12 @@
       height: 400px;
       margin: 5px 10px;
     }
+    .cards{
+      width: 250px;
+      border: 1px solid ;
+      border-radius: 15px;
+    }
+    .card-m{
+      margin: 10px 50px;
+      height: 200px;
+    }
