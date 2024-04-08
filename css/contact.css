@@ -135,9 +135,9 @@ font-size: 30px;
   width:35%;
   height:auto;
   padding:0px 10px;
-  background-color:  #232323;
+ 
   border-radius: 20px;
-  border: 1px solid black;
+
   margin:10px auto;
 
 }
@@ -148,6 +148,7 @@ font-size: 30px;
     padding: 1rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     width: 100%;
+    margin-top: 50px;
     border-radius: 0.5rem;
     text-align: center;
     justify-content: center;
@@ -187,5 +188,8 @@ font-size: 30px;
     
     .header{
       font-family: "Roboto", 'Open-sans';
-
+    }
+    .color{
+ color: black;
+ margin-left: 10px;
     }
