@@ -9,3 +9,7 @@
     -webkit-background-size: cover;
     background-size: cover;
     }
+    .img-thumbnail{
+      height: 400px;
+      margin: 5px 10px;
+    }
