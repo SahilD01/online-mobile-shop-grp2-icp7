@@ -67,9 +67,9 @@
 
     <div class="main-cont">
 
-        <div class="img-div">
+      <!----<div class="img-div">
               <img src="..\img\contact-page-img\banner-img.jpg" class="banner-img" >
-        </div>
+        </div>-->
     
        
      <!----    
@@ -166,7 +166,7 @@
 
 
 <div class= "text2">
-  <p class="text-cont">We highly value your Feedback! Kiendly take a movement to rate your experience and provide us with your valuable Rateing!!</p>
+  <p class="text-cont">We highly value your Feedback! Kiendly take a movement to rate your experience and provide us with your valuable Rate!!</p>
 </div>
 
 
@@ -194,37 +194,10 @@
           Rating is: 0/5
       </h3>
 </div>
-<script >
+<script  src=".\..\js\contact.js">
   
 
-  // To access the stars
-  let stars = 
-    document.getElementsByClassName("star");
-  let output = 
-    document.getElementById("output");
   
-  // Funtion to update rating
-  function rating(n) {
-    remove();
-    for (let i = 0; i < n; i++) {
-      if (n == 1) cls = "one";
-      else if (n == 2) cls = "two";
-      else if (n == 3) cls = "three";
-      else if (n == 4) cls = "four";
-      else if (n == 5) cls = "five";
-      stars[i].className = "star " + cls;
-    }
-    output.innerText = "Rating is: " + n + "/5";
-  }
-  
-  // To remove the pre-applied styling
-  function remove() {
-    let i = 0;
-    while (i < 5) {
-      stars[i].className = "star";
-      i++;
-    }
-  }
   
   </script>
 </div>
