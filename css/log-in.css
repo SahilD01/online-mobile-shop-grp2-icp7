@@ -20,7 +20,9 @@
 .signup-form{
   display: none;
 }
-
+#btn-sign{
+  padding: 10px 20px;
+}
 .title {
   font-size: 30px;
 }
