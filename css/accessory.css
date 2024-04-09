@@ -1,5 +1,12 @@
 
+.product{
+    height: 200px;
 
+}
+
+.arrow{
+    height: 20px;
+}
 .name{
     margin-left: 20px;
 }
