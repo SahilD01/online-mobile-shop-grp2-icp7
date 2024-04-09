@@ -20,6 +20,29 @@
         transform: scale(1.1);
       }
     
+    .main-img{
+            height: 300px;
+             object-fit: cover;
+             border: 2px solid black;
+             border-radius: 5px;
+             box-shadow: 1px 1px 2px 2px gray;
+             margin: 20px auto;
+             display: block;
+        }
+        .img-container{
+            display: flex;
+            justify-content: center;
+        }
+        .product-img{
+        height: 70px;
+            justify-content: center;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin: 10px;
+            cursor: pointer;
+            
+        }
 
     </style>
 </head>
@@ -34,17 +57,22 @@
 
 
   <div class=" container-md w-100 p-2 bg-success container1 ">
-        <div class="d-flex flex-row ">
 
-    <img src="c:\Users\hp\Downloads\phne-img4.png"class="img-fluid w-75 "/>
-    <div class="d-flex flex-column mb-3 mt-2">
-      <div class="p-2 w-75"><img src="c:\Users\hp\Downloads\phnee2.jpg"/></div>
-      <div class="p-2 w-75"><img src="c:\Users\hp\Downloads\phne1.jpg" ></div>
-      <div class="p-2 w-75"><img src="c:\Users\hp\Downloads\phne3.jpg" /></div>
-    </div>
+    <img src="../img/phne-img.jpg"class="img-fluid w-100 " id="main-img" />
+   
+    <div class="img-container d-flex flex-row">
+            <img src="../img/phne-img.jpg" class="img-fluid product-img" onclick="changeimage('../img/phne-img.jpg')" />
+            <img src="../img/phne1.jpg" class="img-fluid product-img" onclick="changeimage('../img/phne1.jpg')" />
+      <img src="../img/phne-img3.webp" class="img-fluid product-img" onclick="changeimage('../img/phne-img3.webp')" />
+      <img src="../img/phnee2.jpg" class="img-fluid product-img" onclick="changeimage('../img/phnee2.jpg')" />
+      <img src="../img/phne-img2.png" class="img-fluid product-img" onclick="changeimage('../img/phne-img2.png')" />
+      <img src="../img/phne3.jpg" class="img-fluid product-img" onclick="changeimage('../img/phne3.jpg')" />
+      <img src="../img/phne-img4.png"class="img-fluid product-img" onclick="changeimage('../img/phne-img4.png')" />
+  
+    
     </div>
   </div>
-  <h1 class="text-decoration-underline">HOT PROMOTION</h1>
+  <h1 class="text-decoration-underline p-3">HOT PROMOTION</h1>
 
   <div class="container-md w-200 p-2 bg-light overflow-hidden">
 <div class="d-flex flex-row mb-3">
@@ -72,22 +100,30 @@
     <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p></div>
   <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/tablet2.jpg" class="img-thumbnail">
     <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p></div>
-  <div class="p-4 m-3 w-25"><img src="../img/tablet3.jpg"class="img-thumbnail">
+  <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/tablet3.jpg"class="img-thumbnail">
     <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
   </div>
-    <div class="p-4 m-3 w-25"><img src="../img/tablet4.png"class="img-thumbnail">
+    <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/tablet4.png"class="img-thumbnail">
       <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
     </div>
-    <div class="p-4 m-3 w-25"><img src="../img/tablet6.jpg"class="img-thumbnail">
+    <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/tablet6.jpg"class="img-thumbnail">
       <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
     </div>
-    <div class="p-4 m-3 w-25"><img src="../img/tablet7.jpg"class="img-thumbnail">
+    <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/tablet7.jpg"class="img-thumbnail">
       <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
     </div>
   
 </div>
     
 </div>
+<script>
+  function changeimage(imageName) {
+    const mainimage = document.getElementById('main-img')
+    mainimage.src = imageName;
+  }
+
+</script>
+
 
 
 
