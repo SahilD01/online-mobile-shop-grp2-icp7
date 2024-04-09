@@ -43,3 +43,12 @@
     text-align: center;
     padding:10px;
 }
+.middle-cards{
+    display: flex;
+    margin :50px 50px;
+}
+.card {
+    margin:10px 50px;
+    border:1px solid black;
+    border-radius: 40px;
+}
