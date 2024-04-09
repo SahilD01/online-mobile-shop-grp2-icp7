@@ -96,3 +96,10 @@
     margin: 30px auto;
     padding: 5px;
  }
+ .bag-img{
+  height: 100px;
+  display: block;
+  margin: 5px auto;
+  border-radius: 20px;
+  background-image: linear-gradient();
+}
