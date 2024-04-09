@@ -11,6 +11,19 @@
     border-radius: 50%;
    border: none;
 }
+.face{
+   
+}
+
+.first-black{
+    background-color: black;
+}
+.first-Cool-Grey{
+    background-color: #8C92AC;
+}
+.first-bold-blue{
+    background-color:#253957;
+}
 /*
 .black{
     background-color: black;
