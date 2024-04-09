@@ -311,9 +311,8 @@ function dec(){
  }
 </script>
 
-
+         <br><br>
          <hr>
-         <br><br><br>
            <!--card 5-->
  <div class="product-card">
     <img src="../img/covers/cvr4.png" class="card1-img"/>
@@ -334,7 +333,7 @@ function dec(){
        Buy Now
     </button>
      </div>
-
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <script>
 function inc(){
@@ -374,6 +373,131 @@ function dec(){
 
  }
 </script>
+
+
+             <!--card 6-->
+ <div class="product-card">
+    <img src="../img/covers/cvr5.png" class="card1-img"/>
+     <div class="card-body">
+    <p class="product-dis">
+        Illustration Lord Shiva Snap Case for Apple iPhone 14 Pro
+     </p>
+      <p class="price">
+         ₹ 299/-
+        </p>
+    <p id="see-qnty">1 x 299</p> <p id="see-total"> Total: 299 </p>
+    <div class="qnty-btn-con">
+     <img src="../img/covers/minus (1).png" class="qnty" onclick="dec()"/>
+     <span class="text" id="qnty-text">1</span>
+    <img src="../img/covers/plus (1).png"class="qnty" onclick="inc()"/>
+    </div> </div>
+    <button type="button" class="btn">
+       Buy Now
+    </button>
+     </div>
+     
+
+<script>
+function inc(){
+    const quantityText = document.getElementById('qnt-text');
+     const showQuantity = document.getElementById("see-qnt");
+     const showTotal = document.getElementById("show-total");
+
+     let quantity = parseInt(quantityText.innerText);
+     
+     if(quantity<10)
+     {
+     quantityText.innerText = ++quantity;
+     } 
+     else{
+         alert("You can't add more than 10 items");
+     }
+     showQuantity.innerText = `${quantity}  X 299`;
+     showTotal.innerText = `Total : ${quantity * 299}`;
+   
+}
+function dec(){
+
+     const quantityText = document.getElementById('qnt-text');
+     const showQuantity = document.getElementById("see-qnt");
+     const showTotal = document.getElementById("show-total");
+      let quantity = parseInt(quantityText.innerText);
+      if(quantity > 1)
+      {
+      quantityText.innerText = --quantity;}
+     else
+     {
+         alert("You can't add less than 1 items");
+     }
+     showQuantity.innerText = `${quantity}  X 299`;
+     showTotal.innerText = `Total : ${quantity * 299}`;
+     showTotal.innerText = `Total : ${quantity * 299}`
+
+ }
+</script>
+
+
+           <!--card 7-->
+ <div class="product-card">
+    <img src="../img/covers/cvr6.png" class="card1-img"/>
+     <div class="card-body">
+    <p class="product-dis">
+        Don’T Give Up Tiger Art Snap Case for Oppo A55
+     </p>
+      <p class="price">
+         ₹ 199/-
+        </p>
+    <p id="see-qnty">1 x 199</p> <p id="see-total"> Total: 199 </p>
+    <div class="qnty-btn-con">
+     <img src="../img/covers/minus (1).png" class="qnty" onclick="dec()"/>
+     <span class="text" id="qnty-text">1</span>
+    <img src="../img/covers/plus (1).png"class="qnty" onclick="inc()"/>
+    </div> </div>
+    <button type="button" class="btn">
+       Buy Now
+    </button>
+     </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<script>
+function inc(){
+    const quantityText = document.getElementById('qnt-text');
+     const showQuantity = document.getElementById("see-qnt");
+     const showTotal = document.getElementById("show-total");
+
+     let quantity = parseInt(quantityText.innerText);
+     
+     if(quantity<10)
+     {
+     quantityText.innerText = ++quantity;
+     } 
+     else{
+         alert("You can't add more than 10 items");
+     }
+     showQuantity.innerText = `${quantity}  X 199`;
+     showTotal.innerText = `Total : ${quantity * 199}`;
+   
+}
+function dec(){
+
+     const quantityText = document.getElementById('qnt-text');
+     const showQuantity = document.getElementById("see-qnt");
+     const showTotal = document.getElementById("show-total");
+      let quantity = parseInt(quantityText.innerText);
+      if(quantity > 1)
+      {
+      quantityText.innerText = --quantity;}
+     else
+     {
+         alert("You can't add less than 1 items");
+     }
+     showQuantity.innerText = `${quantity}  X 199`;
+     showTotal.innerText = `Total : ${quantity * 199}`;
+     showTotal.innerText = `Total : ${quantity * 199}`
+
+ }
+</script>
+
         </body>
         </html>
 
