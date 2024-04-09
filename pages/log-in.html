@@ -15,13 +15,13 @@
 </style>
 
 <body>
-    <div class="row g-0 text-center">
-        <div class="col-sm-6 col-md-4 mt-5"><img src="../img/log-in-page/Secure login.gif">
-        </div>
-        <div class=" col-6 col-md-8">
-            <div class="container">
-                <div class="forms-container">
-                    <div class="signin-signup">
+    <div class="container sign-in-body">
+        <button id="btn-sign" type="button" class="btn btn-dark" onclick="switchFormPosition()"> sign-up</button>
+    <div class="d-flex row mx-auto text-center" id="main-container">
+        <div class="col-sm-4 col-md-6  mt-5 main-container-sections"><img src="../img/log-in-page/Secure login.gif" class=""></div>
+        <div class="col-sm-4 col-md-6 main-container-sections">
+                <div class="forms-container" id="sign-in-form-container">
+                    <div class="signin-form" id="sign-in-form">
                         <form action="#" class="sign-in-form">
                             <h2 class="title">Sign in</h2>
                             <div class="input-field">
@@ -50,12 +50,93 @@
                             </div>
                         </form>
                     </div>
+
+                    <div class="signup-form" id="sign-up-form">
+                        <form action="#" class="sign-in-form">
+                            <h2 class="title">Sign Up</h2>
+                            <div class="input-field">
+                                <i class="fas fa-user "></i>
+                                <input class="username-field" type="text" placeholder="Enter Your Mail" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input class="username-field mt-3" type="password" placeholder="Password" />
+                            </div>
+                            <div class="input-field">
+                                <i class="fas fa-lock"></i>
+                                <input class="username-field mt-3" type="password" placeholder="Confirm Password" />
+                            </div>
+                            <input type="submit" value="Login" class="btn-login mt-3" />
+                            <p class="social-text">Or Sign up with social platforms</p>
+                            <div class="social-media">
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f social-media-icons "></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter social-media-icons "></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-google social-media-icons "></i>
+                                </a>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in social-media-icons "></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            
         </div>
     </div>
 
+</div>
+
     <script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () { window.setTimeout(document.querySelector('svg').classList.add('animated'), 1000); })
+    </script>
+    <script>
+
+        let switchState = true;
+        let signInState = true;
+
+
+        function switchFormPosition() {
+            const formBody = document.getElementById('main-container');
+            const signInFormElement = document.getElementById('sign-in-form');
+            const signUpFormElement = document.getElementById('sign-up-form');
+            const btnSign = document.getElementById('btn-sign');
+            if (switchState){
+                formBody.style.flexDirection = 'row-reverse';
+                if(signInState){
+                    signInFormElement.style.display = 'none';
+                    signUpFormElement.style.display = 'block';
+                    signInState = false;
+                }
+                switchState = false;
+                btnSign.innerText = 'Sign-In';
+            }
+            else{
+                formBody.style.flexDirection = 'row';
+                switchState = true;
+                if(!signInState){
+                    signInFormElement.style.display = 'block';
+                    signUpFormElement.style.display = 'none';
+                    signInState = true;
+                    btnSign.innerText = 'Sign-Up';
+                }
+            }
+        }
+
+        // function changeForm() {
+        //     const form = document.getElementById('sign-in-form-container');
+        //     if (signInState){
+        //         form.style.display = 'none';
+        //         signInState = false;
+        //     }
+        //     else{
+        //         form.style.display = 'block';
+        //         signInState = true;
+        //     }
+        // }
     </script>
 </body>
 
