@@ -95,6 +95,7 @@
   display: block;
   margin: 30px auto;
   padding: 5px;
+  display: inline-block;
 }
 .phone-img{
 height:150px;
