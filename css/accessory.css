@@ -1,6 +1,15 @@
 
+.product{
+    height: 200px;
 
+}
 
+.arrow{
+    height: 20px;
+}
+.name{
+    margin-left: 20px;
+}
 .container-1{
     display: flex;
     margin:10px 0;
@@ -8,6 +17,7 @@
 
 .container-2{
     display: flex;
+    margin-top: 20px;
 }
 
 
