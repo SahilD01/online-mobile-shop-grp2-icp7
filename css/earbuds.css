@@ -10,10 +10,9 @@
     width:25px;
     border-radius: 50%;
    border: none;
+   margin:5px;
 }
-.face{
-   
-}
+
 
 .first-black{
     background-color: black;
