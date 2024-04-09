@@ -6,16 +6,26 @@
 }
 .first-info{
     display: flex;
-    width:100%
+    width:100%;
+    margin:10px ;
+    justify-content: center;
+    text-align: center;
 }
 .info-cont{
-    width:30%;
+    width:40%;
     height:auto;
     padding:10px;
-    margin:10px 3cm;
+    margin: 10px 5%;
+    padding:10px;
 
 }
 .first-info-head{
     color: black;
     font-size: 40px;
+}
+.info-img{
+    width:30%;
+    height:auto;
+    padding:10px;
+   margin:10px 10%;
 }
