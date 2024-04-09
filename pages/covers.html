@@ -396,7 +396,7 @@ function dec(){
     </button>
      </div>
      
-
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 <script>
 function inc(){
     const quantityText = document.getElementById('qnt-text');
@@ -497,6 +497,69 @@ function dec(){
 
  }
 </script>
+           
+
+            <!--card 8-->
+ <div class="product-card">
+    <img src="../img/covers/cvr7.png" class="card1-img"/>
+     <div class="card-body">
+    <p class="product-dis">
+        Hard Typo Snap Case for Xiaomi Mi 10i (5G)
+     </p>
+      <p class="price">
+         ₹ 179/-
+        </p>
+    <p id="see-qnty">1 x 179</p> <p id="see-total"> Total: 179 </p>
+    <div class="qnty-btn-con">
+     <img src="../img/covers/minus (1).png" class="qnty" onclick="dec()"/>
+     <span class="text" id="qnty-text">1</span>
+    <img src="../img/covers/plus (1).png"class="qnty" onclick="inc()"/>
+    </div> </div>
+    <button type="button" class="btn">
+       Buy Now
+    </button>
+     </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<script>
+function inc(){
+    const quantityText = document.getElementById('qnt-text');
+     const showQuantity = document.getElementById("see-qnt");
+     const showTotal = document.getElementById("show-total");
+
+     let quantity = parseInt(quantityText.innerText);
+     
+     if(quantity<10)
+     {
+     quantityText.innerText = ++quantity;
+     } 
+     else{
+         alert("You can't add more than 10 items");
+     }
+     showQuantity.innerText = `${quantity}  X 179`;
+     showTotal.innerText = `Total : ${quantity * 179}`;
+   
+}
+function dec(){
+
+     const quantityText = document.getElementById('qnt-text');
+     const showQuantity = document.getElementById("see-qnt");
+     const showTotal = document.getElementById("show-total");
+      let quantity = parseInt(quantityText.innerText);
+      if(quantity > 1)
+      {
+      quantityText.innerText = --quantity;}
+     else
+     {
+         alert("You can't add less than 1 items");
+     }
+     showQuantity.innerText = `${quantity}  X 179`;
+     showTotal.innerText = `Total : ${quantity * 179}`;
+     showTotal.innerText = `Total : ${quantity * 179}`
+
+ }
+</script>
+
 
         </body>
         </html>
