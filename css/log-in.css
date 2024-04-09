@@ -63,3 +63,38 @@
   border-radius: 50px;
   padding: 5px 10px;
 }
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.signin-form,
+.signup-form {
+  animation: slideIn 1s forwards;
+}
+
+
+@keyframes Image {
+  0% {
+      opacity: 0;
+  }
+  
+  100% {
+      opacity: 1;
+  }
+}
+
+.main-container-sections {
+  animation: slideIn 1s forwards;
+}
+
+.main-container-sections img {
+  animation: Image 2s forwards;
+}
