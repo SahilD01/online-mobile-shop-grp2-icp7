@@ -58,60 +58,28 @@
     </nav>
     <!-- Navbar  end -->
 
+
+
+
+
     
 <!---contact code start-->
 
     <div class="main-cont">
 
-
-        <div class="img-div">
+      <!----<div class="img-div">
               <img src="..\img\contact-page-img\banner-img.jpg" class="banner-img" >
-        </div>
+        </div>-->
     
-        <div class="contact-info">
-            <div class="head">
-                <h1 class="header">Get In Touch</h1>
-             </div>
+       
+     <!----    
 
-                <!--start address call and email part -->
-                <div class="second-part">
-            
-                    <div class="location-part">
-
-                     <a href=https://maps.app.goo.gl/rUoSC6S7X4UtsiuM7 class="links">
-                     <i class="fa-solid fa-location-dot icon-style"alt="location-icon"id="location"></i></a>
-                     <div class="icon-name">Location:</div>
-                     <p>1288/567, New Nandanvan Colony,<br> Nandanvan, Nagpur, <br>Maharashtra 440024.</p>
-                  </div>
-
-                  <div class="email-part">                
-                     <a href="mailto:mobilemart@gmail.com" class="links">
-                     <i class="fa-solid fa-envelope icon-style"alt="email-icon"id="email"></i></a>
-                     <div class="icon-name">Email:</div>
-                     <p>mobilemart@gmail.com</p>
-            
-                   </div>
-
-                   <div class="call-part">
-                       <a href="tel:+91 000 000 0000" class="links">
-                       <i class="fa-solid fa-phone icon-style" alt="phone-icon"id="call"></i></a>
-                       <div class="icon-name">Call:</div>
-                       <p>+91 000 000 0000</p>
-                   </div>
-              
-                </div>  
-        </div>
-         
-<div>
-
- </div>
+<div class="text1">
+  <p class="text-cont">Let's get this sonversation styarted. Tell us a bit about yourself, and we'll get in touch as soon as we can. </p>
+</div>
 
 
-
-
-
-
-
+-->
 
         
         <!-- feedback form -->
@@ -197,74 +165,100 @@
   </div>
 
 
+<div class= "text2">
+  <p class="text-cont">We highly value your Feedback! Kiendly take a movement to rate your experience and provide us with your valuable Rate!!</p>
+</div>
+
+
+
 <div class="star-cont">
   <div class="star-card">
     <h1> Star Rating</h1>
     <br />
-    <span onclick="gfg(1)"
+    <span onclick="rating(1)"
           class="star">★
     </span>
-    <span onclick="gfg(2)"
+    <span onclick="rating(2)"
           class="star">★
     </span>
-    <span onclick="gfg(3)"
+    <span onclick="rating(3)"
           class="star">★
     </span>
-    <span onclick="gfg(4)"
+    <span onclick="rating(4)"
           class="star">★
     </span>
-    <span onclick="gfg(5)"
+    <span onclick="rating(5)"
           class="star">★
     </span>
     <h3 id="output">
           Rating is: 0/5
       </h3>
 </div>
-</div>
-<script >
+<script  src=".\..\js\contact.js">
   
 
-// To access the stars
-let stars = 
-	document.getElementsByClassName("star");
-let output = 
-	document.getElementById("output");
-
-// Funtion to update rating
-function gfg(n) {
-	remove();
-	for (let i = 0; i < n; i++) {
-		if (n == 1) cls = "one";
-		else if (n == 2) cls = "two";
-		else if (n == 3) cls = "three";
-		else if (n == 4) cls = "four";
-		else if (n == 5) cls = "five";
-		stars[i].className = "star " + cls;
-	}
-	output.innerText = "Rating is: " + n + "/5";
-}
-
-// To remove the pre-applied styling
-function remove() {
-	let i = 0;
-	while (i < 5) {
-		stars[i].className = "star";
-		i++;
-	}
-}
-
-</script>
+  
+  
+  </script>
+</div>
 
 
 
 
+<div class="contact-info">
+  <div class="head">
+      <h1 class="header">Get In Touch</h1>
+   </div>
+
+      <!--start address call and email part -->
+      <div class="second-part">
+  
+          <div class="location-part">
+
+           <a href=https://maps.app.goo.gl/rUoSC6S7X4UtsiuM7 class="links">
+           <i class="fa-solid fa-location-dot icon-style"alt="location-icon"id="location"></i></a>
+           <div class="icon-name">Location:</div>
+           <p>1288/567, New Nandanvan Colony,<br> Nandanvan, Nagpur, <br>Maharashtra 440024.</p>
+        </div>
+
+        <div class="email-part">                
+           <a href="mailto:mobilemart@gmail.com" class="links">
+           <i class="fa-solid fa-envelope icon-style"alt="email-icon"id="email"></i></a>
+           <div class="icon-name">Email:</div>
+           <p>mobilemart@gmail.com</p>
+  
+         </div>
+
+         <div class="call-part">
+             <a href="tel:+91 000 000 0000" class="links">
+             <i class="fa-solid fa-phone icon-style" alt="phone-icon"id="call"></i></a>
+             <div class="icon-name">Call:</div>
+             <p>+91 000 000 0000</p>
+         </div>
+    
+      </div>  
+</div>
 
 
 
-
-
- 
+    <!--start map part-->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14886.020615180501!2d79.1208889!3d21.1322859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c72f6cfd177b%3A0x89fad83f168449e1!2sRoad%20To%20Code!5e0!3m2!1sen!2sin!4v1707145073248!5m2!1sen!2sin"
+       width="600" height="450" 
+       style="border:0;" allowfullscreen="" 
+       loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade" alt="map-location">
+      </iframe>
     </div>
+
+    
+    <!--end map part -->
+
+
+
+
+  
+</div>
     
     <!-- Footer -->
     <footer class="text-center text-lg-start text-white" style="background-color: #252525">
