@@ -1,0 +1,40 @@
+
+
+.product-card{
+    background-color: white;
+    width: 800px;
+    border-radius: 20px;
+    height:  200px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    margin: 30px auto;
+    padding: 5px;
+    display: inline-block;
+  }
+  .phone-img{
+  height:160px;
+  width: 300px;
+  margin: 5px auto;
+  border-radius: 7px;
+  background-image: linear-gradient();
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  
+  }
+  .adjust-size{
+  font-size: 70%;
+  margin-bottom: -2px;
+  color: #388e3c;
+  }
+  .adjust-padding{
+    padding-top: -55px;
+    margin-left: 5px;
+  }
+  .font-size{
+    font-size: 12px;
+  }
+    
+    .clr{
+    color: #388e3c;
+  }
