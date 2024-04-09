@@ -3,7 +3,6 @@ let stars =
 document.getElementsByClassName("star");
 let output = 
 document.getElementById("output");
-
 // Funtion to update rating
 function rating(n) {
 remove();
@@ -15,7 +14,7 @@ for (let i = 0; i < n; i++) {
   else if (n == 5) cls = "five";
   stars[i].className = "star " + cls;
 }
-output.innerText = "Rating is: " + n + "/5";
+output.innerText = " " + n + "/5";
 }
 
 // To remove the pre-applied styling
