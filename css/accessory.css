@@ -1,6 +1,8 @@
 
 
-
+.name{
+    margin-left: 20px;
+}
 .container-1{
     display: flex;
     margin:10px 0;
