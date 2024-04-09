@@ -10,28 +10,30 @@ body {
  }
 .product-card{
     background-color: white;
-    width: 250px;  
+    width: 250px;
+    height: 430px;  
     border-radius: 20px;
     box-shadow: 0 0 10px;
     display: inline-block;
-    margin: 20px auto;
+    margin-left: 50px ;
     padding: 3px;
 }
 .card1-img{
-    height: 200px;
+    height: 150px;
+    width: 160px;
     display: block;
-    margin: 5px auto;
+    margin: auto;
     justify-content: center;
     border-radius: 20px;
     padding: 10px 20px;
-
 }
 .product-title{
     font-size: 16px;
    
 }
 .card-body{
-    margin-left: 7px;
+    margin-left: 17px;
+   
 }
 .product-dis{
     font-size: 14px;
@@ -43,13 +45,14 @@ body {
    
 }
 .btn{
-     background-color: #0093E9;
-     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+     background-color: black;
+     color: #fff;
      border: none;
-     border-radius: 20px;
-     padding: 5px 20px;
+     border-radius: 25px;
+     padding: 5px 20px ;
      display: block;
      margin: 10px ;
+     margin-left: 65px;
 }
 .qnty{
     height: 25px;
