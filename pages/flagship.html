@@ -15,12 +15,11 @@
       .container1{
         background-color: rgb(225, 224, 224);
       }
-
+.main-img{
+  width: 1500px;
+}
     
-      .side-img{
-        width: 200px;
-        height: 100px;
-      }
+    
       .card-effects{
         background-color:white;
       
@@ -30,21 +29,7 @@
     
         transform: scale(1.1);
       }
-        .img-container{
-            display: flex;
-            justify-content: center;
-        }
-        .product-img{
-        height: 70px;
-            justify-content: center;
-            object-fit: cover;
-            border-radius: 5px;
-            border: 1px solid black;
-            margin: 10px;
-            cursor: pointer;
-            
-        }
-
+       
     </style>
 </head>
 <body class="bg-light">
@@ -169,12 +154,12 @@
   <h1 class="title">Product Review Card</h1>
   <div class="container-fluid d-flex justify-content-center">
   <img src="../img/flagshippage-img/phne-img.jpg" class="main-img" id="main-img">
-  <div class="img-container d-flex flex-column   ">
-    <img src="../img/flagshippage-img/phne-img.jpg" class="" onclick="changeimage('../img/flagshippage-img/phne-img.jpg')" />
-    <img src="../img/flagshippage-img/phne-img3.webp" class="product-img" onclick="changeimage('../img/flagshippage-img/phne-img3.webp')" />
-    <img src="../img/flagshippage-img/phne-img2.png" class="product-img" onclick="changeimage('../img/flagshippage-img/phne-img2.png')" />
-    <img src="../img/flagshippage-img/phne-img4.png" class="product-img" onclick="changeimage('../img/flagshippage-img/phne-img4.png')" />
-    <img src="../img/flagshippage-img/phne-img6.png" class="product-img" onclick="changeimage('../img/flagshippage-img/phne-img6.png')" />
+  <div class="img-container d-flex flex-column ms-5  ">
+    <img src="../img/flagshippage-img/phne-img.jpg" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img.jpg')" />
+    <img src="../img/flagshippage-img/phne-img3.webp" class="w-50"w-25 onclick="changeimage('../img/flagshippage-img/phne-img3.webp')" />
+    <img src="../img/flagshippage-img/phne-img2.png" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img2.png')" />
+    <img src="../img/flagshippage-img/phne-img4.png" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img4.png')" />
+    <img src="../img/flagshippage-img/phne-img6.png" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img6.png')" />
   </div>
   </div>
 
