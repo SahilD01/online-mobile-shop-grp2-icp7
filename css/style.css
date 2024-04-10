@@ -23,4 +23,16 @@
 }
 .card-image-top{
     border-radius: 15px;
+    height: 180px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    
 }
+.carousel .item .img-box {
+    height: 180px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+  }
+  
