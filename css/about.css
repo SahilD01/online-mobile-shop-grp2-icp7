@@ -35,9 +35,9 @@
 
 }
 .middle-part{
-    font-size:20px ;
-    background-color: black;
-    color: white;
+    font-size:30px ;
+    
+    color: black;
    
     justify-content: center;
     text-align: center;
@@ -46,6 +46,7 @@
 .middle-cards{
     display: flex;
     margin :50px 50px;
+    
 }
 .card {
     margin:10px 50px;
@@ -56,9 +57,22 @@
     width:100%;
     height: auto;
     padding:10px;
-    border:1px solid black;
+   
     display: flex;
     justify-content: center;
     text-align: center;
-   
+  
+}
+
+.second-img{
+    margin: 20px;
+}
+
+.second-info-cont{
+    margin: 40px; 
+}
+.second-head{
+    color: black;
+    font-size: 40px;
+
 }
