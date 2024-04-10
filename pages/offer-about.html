@@ -9,16 +9,45 @@
 </head>
 <body>
      <div class="product-card">
-       <div class="scroll-container">
-        <img src="../img/offer-about/1st.jpg" alt="Cinque Terre">
-        <img src="../img/offer-about/2nd .jpg" alt="Forest">
-        <img src="../img/offer-about/3rd.jpg" alt="Northern Lights">
-        <img src="../img/offer-about/4th .jpg" alt="Mountains">
-        <img src="../img/offer-about/5th .jpg" alt="Mountains">
-        <img src="../img/offer-about/6th .jpg" alt="Mountains">
-        <img src="../img/offer-about/7th .jpg" alt="Mountains">
-        <img src="../img/offer-about/8th .jpg" alt="Mountains">
-      </div>
+      <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="../img/offer-about/1st.jpg" alt="Nature" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/2nd.jpg" alt="Snow" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/3rd.jpg" alt="Mountains" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/4th.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/5th.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/6th.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/7th.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../img/offer-about/8th.jpg" alt="Lights" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
     </div>
 
        <div class="info-card">
