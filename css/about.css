@@ -172,7 +172,33 @@ text-align: center;
             padding:20px;
            
         }
-    
+        .second-info{
+             width:100%;
+             height: auto;
+             padding:20px;
+             margin:20px 0px;
+             justify-content: center;
+             text-align: center;
+             display: block;
+          
+        }
+        .second-img{
+            margin: 20px;
+            width:300px;
+        }
+
+        .second-info-cont{
+            margin: 20px 10px; 
+        }
+        .middle-part{
+  
+           
+            color: black;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            padding:10px;
+        }
     }
 
   
