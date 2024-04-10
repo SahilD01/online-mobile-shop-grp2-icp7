@@ -113,3 +113,13 @@ border: 1px solid black;
     justify-content: center;
     text-align: center;
 }
+.middle-img-part{
+    border: 1px solid black;
+    display: flex;
+    height:auto;
+    width:100px;
+}
+.middle-img-part-first{
+    width:300px;
+    height:300px;
+}
