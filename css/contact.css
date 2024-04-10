@@ -188,3 +188,48 @@ font-size: 30px;
  color: black;
  margin-left: 10px;
     }
+    
+
+    @media screen and (max-width: 700px) {
+
+      .image-part{
+        margin-top: 100px;
+          height:300px;
+          
+
+        }
+        .text2{
+    
+          font-size: 20px;
+           text-align: center;
+            justify-content: center;
+           padding:2px;
+           border: 1px solid black;
+           margin-bottom: 10px;
+           background-color:black;
+           color: white;
+         
+          
+            }
+            .star-cont{
+              width:100%;
+              height:auto;
+              padding:0px 5px;
+             
+              border-radius: 20px;
+            
+              margin:10px auto;
+            
+            }
+            .second-part{
+              box-shadow: 0 0 20px rgba(0,0,0,0.2);
+              display:block;
+              height: auto;
+              width:100%;
+              padding: 20px 20px;
+              justify-content: center;
+              text-align: center;
+              margin-bottom:30px;
+              }
+             
+    }
