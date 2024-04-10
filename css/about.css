@@ -98,10 +98,14 @@
 
 .img-card{
 border-radius: 50%;
-width:200px;
+margin-left: 80px;
 height: 200px;
-
+width: 200px;
 border: 1px solid black;
+justify-content: center;
+text-align: center;
+
+
 }
 .pro-card{
     width:100%;
