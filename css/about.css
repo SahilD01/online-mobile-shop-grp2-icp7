@@ -153,3 +153,26 @@ text-align: center;
 .unorder-list{
     display: flex;
   }
+
+
+
+  @media screen and (max-width: 700px) {
+    .first-info{
+        justify-content: center;
+        text-align: center;
+        display: block;
+    }
+    .info-cont{
+        width:100%;
+        height:auto;
+    }
+        .info-img{
+            width:100%;
+            height:auto;
+            padding:20px;
+           
+        }
+    
+    }
+
+  
