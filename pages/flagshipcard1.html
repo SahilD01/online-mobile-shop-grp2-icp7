@@ -1,11 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flagshipcard1 page</title>
+    <title>DOM application-product card(inc,dec)</title>
 </head>
+<style>
+    body {
+        background-color: rgba(53, 53, 220, 0.507);
+    }
+
+    .heading {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        margin: 20px auto;
+        height: 700px;
+        width: 1030px;
+
+
+    }
+
+    .product-card {
+        background-color: #fff;
+        width: 300px;
+        border-radius: 20px;
+        height: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin: 30px auto;
+        padding: 5px;
+
+    }
+
+    .headphone-img {
+        width: 180px;
+        height: 150px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 20px;
+        padding: 20px 40px;
+        background-color: yellow;
+    }
+
+    .card-body {
+
+        margin-left: 10px;
+    }
+
+    .product-title {
+        font-size: 26px;
+    }
+
+    .product-description {
+        font-size: 16px;
+    }
+
+    .product-price {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .quantity-btn-container {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .btn-quantity {
+        height: 30px;
+    }
+
+    .quantity-text {
+        font-size: 25px;
+        margin: auto 10px;
+    }
+
+    .btn-buy-now {
+        background-color: yellow;
+        color: black;
+        border: none;
+        font-size: 25px;
+        padding: 5px 30px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 20px;
+    }
+
+    .btn-buy-now:hover {
+        box-shadow: 1px 1px 2px 2px rgb(38, 37, 39);
+    }
+
+    @media screen and (max-width:600px) {
+
+        .container {
+            width: 90%;
+            flex-direction: column;
+            height: 200px;
+
+        }
+    }
+</style>
+
 <body>
-    <h1>hiiiii</h1>
+    <h1 class="heading">Product Cards</h1>
+    <div class="container">
+        <div class="product-card">
+            <img src="./images/headphones4 (1).png" class="headphone-img" />
+            <div class="card-body">
+                <h1 class="product-title">Wireless Earbud</h1>
+                <p class="product-description">
+                    this Headphones are a pair of padded speakers
+                    which you wear over your ears in order to listen to a radio or recorded music.
+                </p>
+                <p class="product-price">Price:₹ 800</p>
+                <h3 id="show-quantity">Item:1 × 800</h3>
+                <h3 id="show-total">Total:800</h3>
+                <div class="quantity-btn-container">
+                    <img src="./images/minus.png" class="btn-quantity" onclick="dec()" />
+                    <span class="quantity-text" id="quantity-text">1</span>
+                    <img src="./images/plus (2).png" class="btn-quantity" onclick="inc()" />
+                </div>
+                <button type="button" class="btn-buy-now">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+
+
+        <div class="product-card">
+            <img src="./images/headphones4 (2).png" class="headphone-img" />
+            <div class="card-body">
+                <h1 class="product-title">Wireless Headphone</h1>
+                <p class="product-description">
+                    this Headphones are a pair of padded speakers
+                    which you wear over your ears in order to listen to a radio or recorded music.
+                </p>
+                <p class="product-price">Price:₹ 300</p>
+                <h3 id="show-quantity2">Item:1 × 300</h3>
+                <h3 id="show-total2">Total:300</h3>
+                <div class="quantity-btn-container">
+                    <img src="./images/minus.png" class="btn-quantity" onclick="dec2()" />
+                    <span class="quantity-text" id="quantity-text2">1</span>
+                    <img src="./images/plus (2).png" class="btn-quantity" onclick="inc2()" />
+                </div>
+                <button type="button" class="btn-buy-now">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/headphones4 (3).png" class="headphone-img img1" />
+            <div class="card-body">
+                <h1 class="product-title">Bluetooth Headphone</h1>
+                <p class="product-description">
+                    this Headphones are a pair of padded speakers
+                    which you wear over your ears in order to listen to a radio or recorded music.
+                </p>
+                <p class="product-price">Price:₹ 500</p>
+                <h3 id="show-quantity3">Item:1 × 500</h3>
+                <h3 id="show-total3">Total:500</h3>
+                <div class="quantity-btn-container">
+                    <img src="./images/minus.png" class="btn-quantity" onclick="dec3()" />
+                    <span class="quantity-text" id="quantity-text3">1</span>
+                    <img src="images/plus (2).png" class="btn-quantity" onclick="inc3()" />
+                </div>
+                <button type="button" class="btn-buy-now">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+
+        function inc() {
+            const quantityText = document.getElementById("quantity-text");
+            const showQuantity = document.getElementById("show-quantity");
+            const showTotal = document.getElementById("show-total");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity < 10) {
+                quantityText.innerText = ++quantity;
+            }
+            else {
+                alert("you cann't add more than 10 items ")
+            }
+            showQuantity.innerText = `Item: ${quantity}×349`;
+
+            showTotal.innerText = `Total: ${quantity * 349}`;
+
+        }
+        function dec() {
+
+            const quantityText = document.getElementById("quantity-text");
+            const showQuantity = document.getElementById("show-quantity");
+            const showTotal = document.getElementById("show-total");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity > 1) {
+                quantityText.innerText = --quantity;
+            }
+            else {
+                alert("you cann't add less than 1 items")
+            }
+            showQuantity.innerText = `Item: ${quantity}×349`;
+            showTotal.innerText = `Total: ${quantity * 349}`;
+
+        }
+
+
+        function inc2() {
+            const quantityText = document.getElementById("quantity-text2");
+            const showQuantity = document.getElementById("show-quantity2");
+            const showTotal = document.getElementById("show-total2");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity < 10) {
+                quantityText.innerText = ++quantity;
+            }
+            else {
+                alert("you cann't add more than 10 items ")
+            }
+            showQuantity.innerText = `Item: ${quantity}×349`;
+
+            showTotal.innerText = `Total: ${quantity * 349}`;
+
+        }
+        function dec2() {
+
+            const quantityText = document.getElementById("quantity-text");
+            const showQuantity = document.getElementById("show-quantity");
+            const showTotal = document.getElementById("show-total");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity > 1) {
+                quantityText.innerText = --quantity;
+            }
+            else {
+                alert("you cann't add less than 1 items")
+            }
+            showQuantity.innerText = `Item: ${quantity}×349`;
+            showTotal.innerText = `Total: ${quantity * 349}`;
+
+        }
+
+        function inc3() {
+            const quantityText = document.getElementById("quantity-text3");
+            const showQuantity = document.getElementById("show-quantity3");
+            const showTotal = document.getElementById("show-total3");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity < 10) {
+                quantityText.innerText = ++quantity;
+            }
+            else {
+                alert("you cann't add more than 10 items ")
+            }
+            showQuantity.innerText = `Item: ${quantity}×349`;
+
+            showTotal.innerText = `Total: ${quantity * 349}`;
+
+        }
+        function dec3() {
+
+            const quantityText = document.getElementById("quantity-text3");
+            const showQuantity = document.getElementById("show-quantity3");
+            const showTotal = document.getElementById("show-total3");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity > 1) {
+                quantityText.innerText = --quantity;
+            }
+            else {
+                alert("you cann't add less than 1 items")
+            }
+            showQuantity.innerText = `Item: ${quantity}×349`;
+            showTotal.innerText = `Total: ${quantity * 349}`;
+
+        }
+    </script>
 </body>
+
 </html>
