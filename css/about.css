@@ -140,6 +140,7 @@ text-align: center;
 }
 .mid-crd{
     margin:20px;
+    
 }
 
 
@@ -155,6 +156,9 @@ text-align: center;
     display: flex;
   }
 
+
+
+  
 
 
   @media screen and (max-width: 700px) {
