@@ -221,5 +221,15 @@ font-size: 30px;
               margin:10px auto;
             
             }
-
+            .second-part{
+              box-shadow: 0 0 20px rgba(0,0,0,0.2);
+              display:block;
+              height: auto;
+              width:100%;
+              padding: 20px 20px;
+              justify-content: center;
+              text-align: center;
+              margin-bottom:30px;
+              }
+             
     }
