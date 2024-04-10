@@ -73,9 +73,19 @@
     font-size: 40px;
 
 }
+.profile-cont{
+  margin: 10px 70px;
+  justify-content: center;
+  text-align: center;  
+}
 
 .profile-part{
     margin:30px 10px;
+    
+    height:auto;
+    padding:40px 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 .profile-head-name{
@@ -83,4 +93,23 @@
     text-align: center;
     justify-content: center;
     color: black;
+  
+}
+
+.img-card{
+border-radius: 50%;
+width:200px;
+height: 200px;
+
+border: 1px solid black;
+}
+.pro-card{
+    width:100%;
+    justify-content: center;
+    text-align: center;
+}
+.pro-img-card{
+    width:100%;
+    justify-content: center;
+    text-align: center;
 }
