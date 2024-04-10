@@ -235,9 +235,10 @@ text-align: center;
         }
         .img-card{
             border-radius: 50%;
-            margin-left: 50px;
-            height: 200px;
-            width: 200px;
+            margin-left: 80px;
+            margin-top:10px;
+            height: 100px;
+            width: 100px;
             border: 1px solid black;
             justify-content: center;
             text-align: center;
@@ -249,7 +250,11 @@ text-align: center;
             }
             .first-info-head-mid{
                 color: black;
-                font-size: 20px;
+                font-size:20px;
+            }
+            .first-info-head{
+                color: black;
+                font-size: 30px;
             }
     }
 
