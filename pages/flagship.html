@@ -15,6 +15,11 @@
       .container1{
         background-color: rgb(225, 224, 224);
       }
+.main-img{
+  width: 1500px;
+}
+    
+    
       .card-effects{
         background-color:white;
       
@@ -24,21 +29,7 @@
     
         transform: scale(1.1);
       }
-        .img-container{
-            display: flex;
-            justify-content: center;
-        }
-        .product-img{
-        height: 70px;
-            justify-content: center;
-            object-fit: cover;
-            border-radius: 5px;
-            border: 1px solid black;
-            margin: 10px;
-            cursor: pointer;
-            
-        }
-
+       
     </style>
 </head>
 <body class="bg-light">
@@ -93,26 +84,26 @@
 
 
 
-    
-<!--front image-->>
-
-  <div class=" container-md w-100 p-2 container1 ">
-
-    <img src="../img/flagshippage-img/phne-img.jpg"class="img-fluid w-100 " id="main-img" />
-   
-    <div class="img-container d-flex flex-row">
-            <img src="../img/flagshippage-img/phne-img.jpg" class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phne-img.jpg')" />
-            <img src="../img/flagshippage-img/phne1.jpg" class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phne1.jpg')" />
-      <img src="../img/flagshippage-img/phne-img3.webp" class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phne-img3.webp')" />
-      <img src="../img/flagshippage-img/phnee2.jpg" class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phnee2.jpg')" />
-      <img src="../img/flagshippage-img/phne-img2.png" class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phne-img2.png')" />
-      <img src="../img/flagshippage-img/phne3.jpg" class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phne3.jpg')" />
-      <img src="../img/flagshippage-img/phne-img4.png"class="img-fluid product-img" onclick="changeimage('../img/flagshippage-img/phne-img4.png')" />
-      
-  
-    
-    </div>
+ 
+<!--main-img start-->
+  <div class="container-fluid d-flex justify-content-center w-100">
+  <img src="../img/flagshippage-img/phne-img.jpg" class="me-2 main-img" id="main-img">
+  <div class="img-container d-flex flex-column ms-5  ">
+    <img src="../img/flagshippage-img/phne-img.jpg" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img.jpg')" />
+    <img src="../img/flagshippage-img/phne-img3.webp" class="w-50"w-25 onclick="changeimage('../img/flagshippage-img/phne-img3.webp')" />
+    <img src="../img/flagshippage-img/phne-img2.png" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img2.png')" />
+    <img src="../img/flagshippage-img/phne-img4.png" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img4.png')" />
+    <img src="../img/flagshippage-img/phne-img6.png" class="w-50" onclick="changeimage('../img/flagshippage-img/phne-img6.png')" />
   </div>
+  </div>
+<!--main-img end-->
+
+
+
+
+
+
+  <!-- promotion contain-->>
   <h1 class="text-decoration-underline pt-3 mt-3">HOT PROMOTION</h1>
 
   <div class="container-md w-200 p-2 bg-light overflow-hidden border border-1">
@@ -120,50 +111,65 @@
   <div class="p-4 m-3 border border-1 overflow-hidden shadow-sm bg-body-primary card-effects ">
   <img src="../img/flagshippage-img/phone1.jpg" class="img-thumbnail"/>
   <p>The 5 Best Android Phones of 2024 | Reviews by Wirecutter<br>⭐⭐⭐⭐✰<br/><b>Price:₹ 90,000</b>
-    </p>
+    <a href="flagshipcard1.html"><button type="button" class="btn btn-secondary btn-mg align-items-bottom ms-5 mt-4 bg-dark"value="CLICK"
+     onclick="alert('Thank You for Clicked Me 🤗 🤗')">CLICK FOR BUY </button> </a></p>
   </div>
+
   <div class="p-4 m-3  border border-1 overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/phone2.jpg" class="img-thumbnail" />
-  <p>The 5 Best Android Phones of 2024 | Reviews by Wirecutter<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 70,000</b></p>
+  <p>The 5 Best Android Phones of 2024 | Reviews by Wirecutter<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 70,000</b>
+  <button type="button" class="btn btn-secondary btn-mg align-items-bottom ms-5 mt-4 bg-dark"value="CLICK"
+   onclick="alert('Thank You for Clicked Me🤗 🤗' )">CLICK FOR BUY </button></p>
   </div>
 
   <div class="p-4 m-3  border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/phone3.jpg" class="img-thumbnail"/>
-  <p>The 5 Best Android Phones of 2024 | Reviews by Wirecutter<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 77,000</b></p>
+  <p>The 5 Best Android Phones of 2024 | Reviews by Wirecutter<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 77,000</b>
+ <a href="flagshipcard1.html"> <button type="button" class="btn btn-secondary btn-mg align-items-bottom ms-5 mt-4 bg-dark"value="CLICK" 
+  onclick="alert('Thank You for Clicked Me 🤗 🤗')">CLICK FOR BUY </button></a></p>
   </div>
+
   <div class="p-4 m-3  border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/phone4.jpg" class="img-thumbnail"/>
-  <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
-  </div>
+  <p> Buy Latest Smart Phones at Best Prices||buy our product<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b>
+  <button type="button" class="btn btn-secondary btn-mg align-items-bottom ms-5 mt-4 bg-dark" value="CLICK"
+   onclick="alert('Thank You for Clicked Me 🤗 🤗')">CLICK FOR BUY </button></p></div>
 </div>
 </div>
+<!--end promotion containe-->
+
+<!-- start best seller content-->
 <h1 class="text-decoration-underline pt-3 mt-3">BEST SELLER</h1>
 <div class="container-md w-200 p-2 bg-light overflow-hidden border border-1">
 <div class="d-flex flex-row mb-3">
   <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/tablet1.jpg" class="img-thumbnail">
-    <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p></div>
+    <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐⭐<br /><b>Price:₹ 99,000</b></p></div>
   <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/tablet2.jpg" class="img-thumbnail">
-    <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p></div>
+    <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐⭐<br /><b>Price:₹ 85,000</b></p></div>
   <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/tablet3.jpg"class="img-thumbnail">
-    <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
+    <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 90,000</b></p>
   </div>
     <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/tablet4.png"class="img-thumbnail">
-      <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
+      <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 89,000</b></p>
     </div>
     <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/tablet6.jpg"class="img-thumbnail">
-      <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
+      <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 75,000</b></p>
     </div>
     <div class="p-4 m-3 w-25 border border-1  overflow-hidden  shadow-sm bg-body-primary card-effects"><img src="../img/flagshippage-img/tablet7.jpg"class="img-thumbnail">
-      <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 80,000</b></p>
+      <p> Buy Latest Smart Phones at Best Prices<br>⭐⭐⭐⭐✰<br /><b>Price:₹ 60,000</b></p>
     </div>
-  
 </div>
-    
 </div>
+<!--end best seller content-->
+
+<!--script start-->
 <script>
   function changeimage(imageName) {
     const mainimage = document.getElementById('main-img')
     mainimage.src = imageName;
   }
-
+function responsebtn(){
+alert('thnk you')
+}
 </script>
+<!--script end-->
 
 
 
