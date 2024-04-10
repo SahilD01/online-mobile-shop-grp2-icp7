@@ -189,3 +189,27 @@ font-size: 30px;
  margin-left: 10px;
     }
     
+
+    @media screen and (max-width: 700px) {
+
+      .image-part{
+        margin-top: 100px;
+          height:300px;
+          
+
+        }
+        .text2{
+    
+          font-size: 20px;
+           text-align: center;
+            justify-content: center;
+           padding:2px;
+           border: 1px solid black;
+           margin-bottom: 10px;
+           background-color:black;
+           color: white;
+         
+          
+            }
+
+    }
