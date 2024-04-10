@@ -13,8 +13,9 @@ function inc(){
      else{
          alert("You can't add more than 10 items");
      }
-     seeQuantity.innerText = `${quantity}  X 179`;
-     seeTotal.innerText = `Total : ${quantity * 179}`;
+     showQuantity.innerText = `${quantity}  X 179`;
+     showTotal.innerText = `Total : ${quantity * 179}`;
+     showTotal.innerText = `Total : ${quantity * 179}`
    
 }
 function dec(){
@@ -23,9 +24,10 @@ function dec(){
      const showQuantity = document.getElementById("show-qnty");
      const showTotal = document.getElementById("show-total");
       let quantity = parseInt(quantityText.innerText);
-      if(quantity > 1)
+      if(quantity>1)
       {
-      quantityText.innerText = --quantity;}
+      quantityText.innerText = --quantity;
+    }
      else
      {
          alert("You can't add less than 1 items");
