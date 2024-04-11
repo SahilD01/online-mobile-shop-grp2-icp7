@@ -59,8 +59,10 @@
     
   }
 
-  .position{
-  
+  .edit-btn{
+   cursor: pointer;
+   margin: 4px;
+
   }
 
 
