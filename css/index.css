@@ -14,3 +14,15 @@
       margin: 5px 10px;
     }
     
+
+    /* product preview card css */
+    #product-main-image{
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+      display: block;
+      margin: 30px auto;
+      padding: 20px;
+  }
