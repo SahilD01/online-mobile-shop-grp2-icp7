@@ -111,7 +111,7 @@
                             this Headphones are a pair of padded speakers
                             which you wear over your ears in order to listen to a radio or recorded music.
                         </p>
-                        <p class="fs-2"><b>Price:₹ 90,000</b></p>
+                        <p class="fs-2"><b>Price:₹ 70,000</b></p>
                         <h3 id="show-quantity2" class="fw-medium">Item:1 × 70,000</h3>
                         <h3 id="show-total2" class="fw-medium">Total:70,000</h3>
                         <div class="d-flex justify-content-center">
@@ -254,7 +254,10 @@
 
 /* card1-script end*/
 /* card2-script start*/
-   
+   function changeimage(imageName) {
+        const mainimage = document.getElementById('main-img2')
+        mainimage.src = imageName;
+    }
 
     function inc2() {
         const quantityText = document.getElementById("quantity-text2");
