@@ -1,21 +1,22 @@
-
-.product{
+.product {
     height: 200px;
 
 }
 
-.arrow{
+.arrow {
     height: 20px;
 }
-.name{
+
+.name {
     margin-left: 20px;
 }
-.container-1{
+
+.container-1 {
     display: flex;
-    margin:10px 0;
+    margin: 10px 0;
 }
 
-.container-2{
+.container-2 {
     display: flex;
     margin-top: 20px;
 }
@@ -39,7 +40,7 @@ body {
     border-radius: 40px;
     display: block;
     margin: 0 auto;
-   
+
 }
 
 .product-disc {
@@ -81,7 +82,7 @@ body {
     font-weight: bold;
     margin: 0 20px;
 }
-.quantity-total{
+
+.quantity-total {
     font-size: 20px;
 }
-
