@@ -4,7 +4,7 @@ function change(path)
     
     if(path==1)
     {
-        imgElement.src = "./img/img1.webp";
+        imgElement.src = "./img/s24.jpg";
     }
     else if(path==2)
     {
