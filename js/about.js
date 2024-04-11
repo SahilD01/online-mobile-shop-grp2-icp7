@@ -13,6 +13,7 @@ function bushra1(X){
     document.getElementById("bushra0").style.display='block';
 else
 document.getElementById("bushra0").style.display='none';
+return;
 }
 
 
