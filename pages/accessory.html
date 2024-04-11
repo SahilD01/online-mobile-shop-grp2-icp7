@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/accessory.css">
     <link rel="stylesheet" href="./../css/nav.css">
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/offer.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -71,59 +73,110 @@
 
         <!-- Accessory Start -->
 
-        <!--Slide -->
-
         <div>
-            <h1 class="text-center m-3">Mobile Accessories</h1>
+            <h1 class="text-lg-center">Special Offers.. </h1></div>
+    
+    
+    
+    <div>
+      <!-- Container for the image gallery -->
+    <div class="container">
+    
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+          <img src="../img/offer-page-img/offer img 0.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+          <img src="../img/offer-page-img/offer img1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+          <img src="../img/offer-page-img/offer img2.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+          <img src="../img/offer-page-img/offer img3.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+          <img src="../img/offer-page-img/offer img4.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+          <img src="../img/offer-page-img/offer img5.jpg" style="width:100%">
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="../img/offer-page-img/offer img 0.jpg" style="width:100%" onclick="currentSlide(1)" alt="1/6">
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div id="carouselExampleAutoplaying" class="carousel slide p-5" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active" data-bs-interval="3500">
-                        <img src="../img/Accessory-page/acc8.jpg" class="product d-block m-auto" />
-                        <h4 class="text-center">Top Accessories</h4>
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="3500">
-                        <img src="../img/Accessory-page/acc5.jpg" class="product d-block m-auto" />
-                        <h4 class="text-center">Moonwalk Mic</h4>
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="3500">
-                        <img src="../img/Accessory-page/se4.jpg" class="product d-block m-auto" />
-                        <h4 class="text-center">Extendable Selfie Stick</h4>
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="3500">
-                        <img src="../img/Accessory-page/cov4.jpg" class="product d-block m-auto" />
-                        <h4 class="text-center"> Pikkme Samsung Galaxy</h4>
-                    </div>
-
-                </div>
-
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="">
-                        <img src="../img/Accessory-page/back.png" class="arrow" />
-                    </span>
-                </button>
-
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="">
-                        <img src="../img/Accessory-page/next.png" class="arrow" />
-                    </span>
-                </button>
-            </div>
-
-            <!--Slide ENd-->
-
+        <div class="column">
+          <img class="demo cursor" src="../img/offer-page-img/offer img1.jpg" style="width:100%" onclick="currentSlide(2)" alt="2/6">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../img/offer-page-img/offer img2.png" style="width:100%" onclick="currentSlide(3)" alt="3/6">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../img/offer-page-img/offer img3.jpg" style="width:100%" onclick="currentSlide(4)" alt="4/6">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../img/offer-page-img/offer img4.png" style="width:100%" onclick="currentSlide(5)" alt="5/6">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../img/offer-page-img/offer img5.jpg" style="width:100%" onclick="currentSlide(6)" alt="6/6">
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 
 
         
