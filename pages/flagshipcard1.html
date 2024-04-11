@@ -54,7 +54,7 @@
     
     <div class="container-fluid d-flex flex-row w-75 m-5 mx-5 my-5" >
         <!--card1 start-->
-    <div class="card w-75  bg-light m-3">
+ <div class="card w-75  bg-light m-3">
        <div class="container-fluid d-flex  flex-column w-50 m-3">
             <img src="../img/flagshippage-img/phone1.jpg" class= "card-img-top mt-4 ms-5 m-3 " id="main-img" style="width:380px " />
             <div class="img-container d-flex flex-row mt-3 m-3 me-5 ">
@@ -84,7 +84,7 @@
 <p><button type="button" class="btn d-grid gap-4 col-5 mx-auto mt-4 fs-3  my-1 rounded-pill" style="width: 300px;" value="CLICK" onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
     BUY NOW</button></p>
 </div>
-                </div>
+                </div>    
 <!--card1 end-->
 
 <!--card2 start-->
@@ -191,12 +191,12 @@
             this Headphones are a pair of padded speakers
             which you wear over your ears in order to listen to a radio or recorded music.
         </p>
-        <p class="fs-2"><b>Price:₹ 90,000</b></p>
-        <h3 id="show-quantity" class="fw-medium">Item:1 × 80,000</h3>
-        <h3 id="show-total" class="fw-medium">Total:80,000</h3>
+        <p class="fs-2"><b>Price:₹ 80,000</b></p>
+        <h3 id="show-quantity4" class="fw-medium">Item:1 × 80,000</h3>
+        <h3 id="show-total4" class="fw-medium">Total:80,000</h3>
         <div class="d-flex justify-content-center">
             <img src="../img/covers/minus (1).png" style="width:60px ;" onclick="dec4()" />
-            <span class="fs-1 fw-bold px-4 py-50 mx-40px my-auto" id="quantity-text">1</span>
+            <span class="fs-1 fw-bold px-4 py-50 mx-40px my-auto" id="quantity-text4">1</span>
             <img src="../img/covers/plus (1).png" style="width:60px;" onclick="inc4()" />
         </div>
 
@@ -252,31 +252,27 @@
 
     }
 
-
-
-
-
-
-
-        
-
-            const quantityText = document.getElementById("quantity-text");
-            const showQuantity = document.getElementById("show-quantity");
-            const showTotal = document.getElementById("show-total");
-            let quantity = parseInt(quantityText.innerText);
-            if (quantity > 1) {
-                quantityText.innerText = --quantity;
-            }
-            else {
-                alert("you cann't add less than 1 items")
-            }
-            showQuantity.innerText = `Item: ${quantity}×90,000`;
-            showTotal.innerText = `Total: ${quantity * 90000}`;
-
-        }
 /* card1-script end*/
 /* card2-script start*/
    
+
+    function inc2() {
+        const quantityText = document.getElementById("quantity-text2");
+        const showQuantity = document.getElementById("show-quantity2");
+        const showTotal = document.getElementById("show-total2");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity < 10) {
+            quantityText.innerText = ++quantity;
+        }
+        else {
+            alert("you cann't add more than 10 items ")
+        }
+        showQuantity.innerText = `Item: ${quantity}×349`;
+
+        showTotal.innerText = `Total: ${quantity * 349}`;
+
+    }
+    function dec2() {
 
         const quantityText = document.getElementById("quantity-text2");
         const showQuantity = document.getElementById("show-quantity2");
