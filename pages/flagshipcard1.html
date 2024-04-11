@@ -149,38 +149,7 @@ value="CLICK" onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
 
         }
 
-        function inc3() {
-            const quantityText = document.getElementById("quantity-text3");
-            const showQuantity = document.getElementById("show-quantity3");
-            const showTotal = document.getElementById("show-total3");
-            let quantity = parseInt(quantityText.innerText);
-            if (quantity < 10) {
-                quantityText.innerText = ++quantity;
-            }
-            else {
-                alert("you cann't add more than 10 items ")
-            }
-            showQuantity.innerText = `Item: ${quantity}×349`;
-
-            showTotal.innerText = `Total: ${quantity * 349}`;
-
-        }
-        function dec3() {
-
-            const quantityText = document.getElementById("quantity-text3");
-            const showQuantity = document.getElementById("show-quantity3");
-            const showTotal = document.getElementById("show-total3");
-            let quantity = parseInt(quantityText.innerText);
-            if (quantity > 1) {
-                quantityText.innerText = --quantity;
-            }
-            else {
-                alert("you cann't add less than 1 items")
-            }
-            showQuantity.innerText = `Item: ${quantity}×349`;
-            showTotal.innerText = `Total: ${quantity * 349}`;
-
-        }
+      
     </script>
 
 
