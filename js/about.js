@@ -44,6 +44,7 @@ return;
 function pooja1(X){
     if (X==0)
     document.getElementById("pooja0").style.display='block';
+    else
 }
 
 
