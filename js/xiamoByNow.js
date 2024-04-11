@@ -1,4 +1,4 @@
-/Product Card Quantity Counter//
+//Product Card Quantity Counter//
 const quantityElement = document.getElementById("quantity");
 function increment() {
     let quantity = parseInt(quantityElement.innerText);
