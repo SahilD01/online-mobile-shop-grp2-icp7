@@ -49,5 +49,13 @@ function pooja1(X){
 return;
 
 }
+function aditya1(X){
+    if (X==0)
+    document.getElementById("aditya0").style.display='block';
+    else
+    document.getElementById("aditya0").style.display='none';
+return;
+
+}
 
 
