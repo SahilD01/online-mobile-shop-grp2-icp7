@@ -34,6 +34,7 @@ function rutuja1(X){
     return;
 }
 
+function rutik1(X)
 
 
 
