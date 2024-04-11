@@ -46,6 +46,8 @@ function pooja1(X){
     document.getElementById("pooja0").style.display='block';
     else
     document.getElementById("pooja0").style.display='none';
+return;
+
 }
 
 
