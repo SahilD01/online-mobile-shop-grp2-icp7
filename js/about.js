@@ -15,7 +15,7 @@ else
 document.getElementById("bushra0").style.display='none';
 return;
 }
-
+function sahil1(X)
 
 
 
