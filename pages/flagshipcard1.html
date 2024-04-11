@@ -23,12 +23,12 @@
     }
    
     
-   
     .card-body {
 
         margin-left: 10px;
     }
 
+    
 
 .btn-card{
      margin-top: 100px;
@@ -52,14 +52,15 @@
 
 <body>
     
-    <div class="container mt-5">
-    <div class="card w-50  bg-light">
+    <div class="container-fluid d-flex flex-row w-75 m-5 mx-5 my-5" >
+        <!--card1 start-->
+    <div class="card w-75  bg-light m-3">
        <div class="container-fluid d-flex  flex-column w-50 m-3">
             <img src="../img/flagshippage-img/phone1.jpg" class= "card-img-top mt-4 ms-5 m-3 " id="main-img" style="width:380px " />
             <div class="img-container d-flex flex-row mt-3 m-3 me-5 ">
                 <img src="../img/flagshippage-img/phone1.jpg" class="w-50 m-2" onclick="changeimage('../img/flagshippage-img/phone1.jpg')" />
                     <img src="../img/flagshippage-img/ph2.png" class="w-50 m-2 "onclick="changeimage('../img/flagshippage-img/ph2.png')" />
-                <img src="../img/flagshippage-img/ph3.webp" class=" w-50 m-2"  onclick="changeimage('../img/flagshippage-img/ph3.webp')" />
+       -         <img src="../img/flagshippage-img/ph3.webp" class=" w-50 m-2"  onclick="changeimage('../img/flagshippage-img/ph3.webp')" />
                 <img src="../img/flagshippage-img/ph1.jpg" class="w-50 m-2"  onclick="changeimage('../img/flagshippage-img/ph1.jpg')" />
             
             </div >
@@ -76,39 +77,188 @@
                 <h3 id="show-total" class="fw-medium">Total:90,000</h3>
                 <div class="d-flex justify-content-center">
                     <img src="../img/covers/minus (1).png" style="width:60px ;" onclick="dec()" />
-                    <span class="fs-1 fw-bold py-auto px-3 pb-3"  id="quantity-text">1</span>
+                    <span class="fs-1 fw-bold px-4 py-50 mx-40px my-auto"  id="quantity-text">1</span>
                     <img src="../img/covers/plus (1).png" style="width:60px;" onclick="inc()" />
                 </div>
             
-<p><button type="button" class="btn d-grid gap-3 col-6 mx-auto mt-3 position-relative" value="CLICK" onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
+<p><button type="button" class="btn d-grid gap-4 col-5 mx-auto mt-4 fs-3  my-1 rounded-pill" style="width: 300px;" value="CLICK" onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
     BUY NOW</button></p>
 </div>
                 </div>
+<!--card1 end-->
+
+<!--card2 start-->
+                <div class="card w-75  bg-light m-3">
+                    <div class="container-fluid d-flex  flex-column w-50 m-3">
+                        <img src="../img/flagshippage-img/phone2.jpg" class="card-img-top mt-1 ms-5 m-3 " id="main-img2"
+                            style="width:380px " />
+                        <div class="img-container d-flex flex-row mt-3 m-3 me-5 ">
+                            <img src="../img/flagshippage-img/phone2.jpg" class="w-50 m-2"
+                                onclick="changeimage('../img/flagshippage-img/phone1.jpg')" />
+                            <img src="../img/flagshippage-img/ph4.png" class="w-50 m-2 "
+                                onclick="changeimage('../img/flagshippage-img/ph2.png')" />
+                            - <img src="../img/flagshippage-img/ph5.jpg" class=" w-50 m-2"
+                                onclick="changeimage('../img/flagshippage-img/ph3.webp')" />
+                            <img src="../img/flagshippage-img/ph6.jpeg" class="w-50 m-2"
+                                onclick="changeimage('../img/flagshippage-img/ph1.jpg')" />
+                
+                        </div>
+                    </div>
+                    <hr class="mt-1">
+                    <div class="card-body">
+                        <h1 class="fs-1 fw-bold">India's NO.1 SmartPhone</h1>
+                        <p class="fs-2 fw-medium">
+                            this Headphones are a pair of padded speakers
+                            which you wear over your ears in order to listen to a radio or recorded music.
+                        </p>
+                        <p class="fs-2"><b>Price:₹ 90,000</b></p>
+                        <h3 id="show-quantity2" class="fw-medium">Item:1 × 70,000</h3>
+                        <h3 id="show-total2" class="fw-medium">Total:70,000</h3>
+                        <div class="d-flex justify-content-center">
+                            <img src="../img/covers/minus (1).png" style="width:60px ;" onclick="dec2()" />
+                            <span class="fs-1 fw-bold px-4 py-50 mx-40px my-auto" id="quantity-text2">1</span>
+                            <img src="../img/covers/plus (1).png" style="width:60px;" onclick="inc2()" />
+                        </div>
+                
+                        <p class="fs-1"><button type="button" class=" btn d-grid gap-4 col-5 mx-auto mt-5  fs-3  my-1 rounded-pill" style="width: 300px;" value="CLICK"
+                                onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
+                                BUY NOW</button></p>
+                    </div>
+                </div>
+                <!--card2 end-->
+
+                <!--card3 start-->
+                <div class="card w-75  bg-light m-3">
+                    <div class="container-fluid d-flex  flex-column w-50 m-3">
+                        <img src="../img/flagshippage-img/phone3.jpg" class="card-img-top mt-1 ms-5 m-3 " id="main-img3"
+                            style="width:380px " />
+                        <div class="img-container d-flex flex-row mt-3 m-3 me-5 ">
+                            <img src="../img/flagshippage-img/phone3.jpg" class="w-50 m-2"
+                                onclick="changeimage('../img/flagshippage-img/phone1.jpg')" />
+                            <img src="../img/flagshippage-img/ph7.jpg" class="w-50 m-2 "
+                                onclick="changeimage('../img/flagshippage-img/ph2.png')" />
+                            - <img src="../img/flagshippage-img/ph8.jpg" class=" w-50 m-2"
+                                onclick="changeimage('../img/flagshippage-img/ph3.webp')" />
+                            <img src="../img/flagshippage-img/ph9.jpg" class="w-50 m-2"
+                                onclick="changeimage('../img/flagshippage-img/ph1.jpg')" />
+                
+                        </div>
+                    </div>
+                    <hr class="mt-1">
+                    <div class="card-body">
+                        <h1 class="fs-1 fw-bold">India's NO.1 SmartPhone</h1>
+                        <p class="fs-2 fw-medium">
+                            this Headphones are a pair of padded speakers
+                            which you wear over your ears in order to listen to a radio or recorded music.
+                        </p>
+                        <p class="fs-2"><b>Price:₹ 90,000</b></p>
+                        <h3 id="show-quantity3" class="fw-medium">Item:1 × 77,000</h3>
+                        <h3 id="show-total3" class="fw-medium">Total:77,000</h3>
+                        <div class="d-flex justify-content-center">
+                            <img src="../img/covers/minus (1).png" style="width:60px ;" onclick="dec3()" />
+                            <span class="fs-1 fw-bold px-4 py-50 mx-40px my-auto" id="quantity-text3">1</span>
+                            <img src="../img/covers/plus (1).png" style="width:60px;" onclick="inc3()" />
+                        </div>
+                
+                        <p class="fs-1"><button type="button" class=" btn d-grid gap-4 col-5 mx-auto mt-5  fs-3  my-1 rounded-pill"
+                                style="width: 300px;" value="CLICK" onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
+                                BUY NOW</button></p>
+                    </div>
+                </div>
+                <!--card3 end-->
+                <!--card4 start-->
+
+               <div class="card w-75 bg-light m-3">
+    <div class="container-fluid d-flex  flex-column w-50 m-3">
+        <img src="../img/flagshippage-img/phone4.jpg" class="card-img-top mt-1 ms-5 m-3 d-block " id="main-img4"
+            style="width:380px " />
+        <div class="img-container d-flex flex-row mt-3 m-3 me-5 ">
+            <img src="../img/flagshippage-img/phone3.jpg" class="w-50 m-2"
+                onclick="changeimage('../img/flagshippage-img/phone1.jpg')" />
+            <img src="../img/flagshippage-img/ph10.webp" class="w-50 m-2 "
+                onclick="changeimage('../img/flagshippage-img/ph2.png')" />
+            - <img src="../img/flagshippage-img/ph11.jpg" class=" w-50 m-2"
+                onclick="changeimage('../img/flagshippage-img/ph3.webp')" />
+            <img src="../img/flagshippage-img/ph12.webp" class="w-50 m-2"
+                onclick="changeimage('../img/flagshippage-img/ph1.jpg')" />
+
+        </div>
+    </div>
+    <hr class="mt-1">
+    <div class="card-body">
+        <h1 class="fs-1 fw-bold">India's NO.1 SmartPhone</h1>
+        <p class="fs-2 fw-medium">
+            this Headphones are a pair of padded speakers
+            which you wear over your ears in order to listen to a radio or recorded music.
+        </p>
+        <p class="fs-2"><b>Price:₹ 90,000</b></p>
+        <h3 id="show-quantity" class="fw-medium">Item:1 × 80,000</h3>
+        <h3 id="show-total" class="fw-medium">Total:80,000</h3>
+        <div class="d-flex justify-content-center">
+            <img src="../img/covers/minus (1).png" style="width:60px ;" onclick="dec4()" />
+            <span class="fs-1 fw-bold px-4 py-50 mx-40px my-auto" id="quantity-text">1</span>
+            <img src="../img/covers/plus (1).png" style="width:60px;" onclick="inc4()" />
+        </div>
+
+        <p class="fs-1"><button type="button" class=" btn d-grid gap-4 col-5 mx-auto mt-5  fs-3  my-1 rounded-pill"
+                style="width: 300px;" value="CLICK" onclick="alert('Thank You For Choosing Me 👀🤗🙏🙏')">
+                BUY NOW</button></p>
+    </div>
+               </div>
+
+                <!--card4 end-->
             </div>
         
+
+
+
     <script>
-         function changeimage(imageName) {
-                const mainimage = document.getElementById('main-img')
-                mainimage.src = imageName;
-            }
+        /* card1-script start*/ 
+    function changeimage(imageName) {
+        const mainimage = document.getElementById('main-img')
+        mainimage.src = imageName;
+    }
 
-        function inc() {
-            const quantityText = document.getElementById("quantity-text");
-            const showQuantity = document.getElementById("show-quantity");
-            const showTotal = document.getElementById("show-total");
-            let quantity = parseInt(quantityText.innerText);
-            if (quantity < 3) {
-                quantityText.innerText = ++quantity;
-            }
-            else {
-                alert("you cann't add more than 3 items ")
-            }
-            showQuantity.innerText = `Item: ${quantity}×90,000`;
-
-            showTotal.innerText = `Total: ${quantity * 90000}`;
-
+    function inc() {
+        const quantityText = document.getElementById("quantity-text");
+        const showQuantity = document.getElementById("show-quantity");
+        const showTotal = document.getElementById("show-total");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity < 3) {
+            quantityText.innerText = ++quantity;
         }
-        function dec() {
+        else {
+            alert("you cann't add more than 3 items ")
+        }
+        showQuantity.innerText = `Item: ${quantity}×90,000`;
+
+        showTotal.innerText = `Total: ${quantity * 90000}`;
+
+    }
+    function dec() {
+
+        const quantityText = document.getElementById("quantity-text");
+        const showQuantity = document.getElementById("show-quantity");
+        const showTotal = document.getElementById("show-total");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity > 1) {
+            quantityText.innerText = --quantity;
+        }
+        else {
+            alert("you cann't add less than 1 items")
+        }
+        showQuantity.innerText = `Item: ${quantity}×90,000`;
+        showTotal.innerText = `Total: ${quantity * 90000}`;
+
+    }
+
+
+
+
+
+
+
+        
 
             const quantityText = document.getElementById("quantity-text");
             const showQuantity = document.getElementById("show-quantity");
@@ -124,6 +274,34 @@
             showTotal.innerText = `Total: ${quantity * 90000}`;
 
         }
+/* card1-script end*/
+/* card2-script start*/
+   
+
+        const quantityText = document.getElementById("quantity-text2");
+        const showQuantity = document.getElementById("show-quantity2");
+        const showTotal = document.getElementById("show-total2");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity > 1) {
+            quantityText.innerText = --quantity;
+        }
+        else {
+            alert("you cann't add less than 1 items")
+        }
+        showQuantity.innerText = `Item: ${quantity}×349`;
+        showTotal.innerText = `Total: ${quantity * 349}`;
+
+    }
+    /* card2-script end*/
+
+    /* card3-script start*/
+
+        /* card3-script end*/
+
+        /* card4-script start*/
+
+            /* card4-script end*/
+
 
 
       
