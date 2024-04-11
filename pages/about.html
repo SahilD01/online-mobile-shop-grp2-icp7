@@ -291,15 +291,17 @@
                       <div class="card-body">
                         <h5 class="card-title">Datta Nedre</h5>
                         <div class="profile-hide-show" style="color: black;">
-                          <input type="radio" value="" onclick="datta1(1)" >Show Profile &nbsp;
-                          <input type="radio" value="" onclick="datta1(0)" >Hide Profile 
+                          <input type="radio" name="userdetail" value="yes" onclick={handleShow} >Show Profile &nbsp;
+                          <input type="radio" name="userdetail" value="No" checked={ showhide==='No'} onclick={handleShow} >Hide Profile &nbsp; 
                           </div>
                         
+                         
+                          
 
-                            
+                           
                           <div class="hide-part mt-3" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-radius: 20px; "id="datta">
                             <p class=" name"> Full Stack Developer
-                              <hr class="hr" style="width: 150px; border-top: 2px solid black;  margin-top: -20px;">
+                            
                             </p>
 
                             <div class="insta">
@@ -319,6 +321,8 @@
                             </div>
 
                             </div>
+                           
+                           
 
 
 
@@ -690,8 +694,8 @@
       </div>
 
 
-
-      <script  src=".\..\js\about.js"></script>
+      <script  src=".\..\js\about.js">
+     </script>
 
 
 
