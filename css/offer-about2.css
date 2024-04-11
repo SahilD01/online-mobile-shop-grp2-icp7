@@ -7,11 +7,22 @@
     font-family: Arial;
   }
   
+  .product-card{
+    background-color: white;
+    width: auto;
+    border-radius: 20px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2);
+    margin: 13px;
+    padding: 5px;
+    display: inline-block;
+  }
+  
   /* The grid: Four equal columns that floats next to each other */
   .column {
     float: left;
-    width: 25%;
-    padding: 10px;
+    width: 13%;
+    padding: 2px;
   }
   
   /* Style the images inside the grid */
@@ -31,12 +42,15 @@
     clear: both;
   }
   
+   
   /* The expanding image container */
   .container {
     position: relative;
     display: none;
+    padding : px;
+    align-items: center;
+    
   }
-  
   /* Expanding image text */
   #imgtext {
     position: absolute;
