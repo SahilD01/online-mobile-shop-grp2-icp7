@@ -42,7 +42,7 @@ document.getElementById("rutik0").style.display='none';
 return;
 }
 function pooja1(X){
-
+    if (X==0)
 }
 
 
