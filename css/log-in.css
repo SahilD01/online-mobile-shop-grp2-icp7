@@ -22,6 +22,7 @@
 }
 #btn-sign{
   padding: 10px 20px;
+  background-color: #252525;
 }
 .title {
   font-size: 30px;
@@ -47,6 +48,8 @@
   border: none;
   border-radius: 20px;
   width: 150px;
+  background-color: #252525;
+  color: white;
 
 }
 
