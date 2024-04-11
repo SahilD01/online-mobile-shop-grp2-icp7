@@ -1,22 +1,9 @@
-
-function calculate() {
-
-    const ans = document.getElementById("datta");
-
-    ans.HTMLDivElement = ` ${datta} `;
+function datta1(X)
+{
+    if (X==0)
+    document.getElementById("datta").style.display='block';
+else
+    document.getElementById("datta").style.display='none';
+return;
 }
-
-function reset() {
- 
-    const ans = document.getElementById("datta");
-    
-
-    amount.value = "";
-    rate.value = "";
-    time.value = "";
-
-    ans.innerText = "";
-}
-
-
 
