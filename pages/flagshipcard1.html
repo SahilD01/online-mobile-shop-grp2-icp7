@@ -299,10 +299,10 @@
         mainimage3.src = imageName3;
     }
 
-    function inc() {
-        const quantityText = document.getElementById("quantity-text");
-        const showQuantity = document.getElementById("show-quantity");
-        const showTotal = document.getElementById("show-total");
+    function inc3() {
+        const quantityText = document.getElementById("quantity-text3");
+        const showQuantity = document.getElementById("show-quantity3");
+        const showTotal = document.getElementById("show-total3");
         let quantity = parseInt(quantityText.innerText);
         if (quantity < 3) {
             quantityText.innerText = ++quantity;
@@ -310,12 +310,29 @@
         else {
             alert("you cann't add more than 3 items ")
         }
-        showQuantity.innerText = `Item: ${quantity}×90,000`;
+        showQuantity.innerText = `Item: ${quantity}×77,000`;
 
-        showTotal.innerText = `Total: ${quantity * 90000}`;
+        showTotal.innerText = `Total: ${quantity * 77000}`;
 
+         function dec3() {
+
+            const quantityText = document.getElementById("quantity-text3");
+            const showQuantity = document.getElementById("show-quantity3");
+            const showTotal = document.getElementById("show-total3");
+            let quantity = parseInt(quantityText.innerText);
+            if (quantity > 1) {
+                quantityText.innerText = --quantity;
+            }
+            else {
+                alert("you cann't add less than 1 items")
+            }
+            showQuantity.innerText = `Item: ${quantity}×77,000`;
+            showTotal.innerText = `Total: ${quantity * 77000}`;
+
+        }
     }
-    function dec() {
+     
+    
         /* card3-script end*/
 
         /* card4-script start*/
