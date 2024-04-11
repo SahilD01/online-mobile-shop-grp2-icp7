@@ -2,7 +2,7 @@
 
 .product-card{
     background-color: white;
-    width: auto;
+    width: 3090px;
     border-radius: 20px;
     height: auto;
     box-shadow: 0 0 10px rgb(0,0,0,0.2);
@@ -78,8 +78,8 @@
   /* The grid: Four equal columns that floats next to each other */
   .column {
     float: left;
-    width: 25%;
-    padding: 10px;
+    width: 13%;
+    padding: 4px;
   }
   
   /* Style the images inside the grid */
@@ -98,12 +98,26 @@
     display: table;
     clear: both;
   }
+  .img-height{
+ width: 40%;
+ padding: 5px;
+  }
   
   /* The expanding image container */
   .container {
     position: relative;
     display: none;
+    
   }
+  
+  /* for img center */
+  .img-center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+     
+      }
   
   /* Expanding image text */
   #imgtext {
