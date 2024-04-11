@@ -17,7 +17,7 @@
 
     /* product preview card css */
     #product-main-image{
-      width: 400px;
+      width: 800px;
       height: 400px;
       object-fit: cover;
       border-radius: 20px;
@@ -32,8 +32,8 @@
     flex-wrap: wrap;
 }
 .product-image{
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   margin: 5px;
   border-radius: 10px;
