@@ -335,7 +335,43 @@
         /* card3-script end*/
 
         /* card4-script start*/
+    function changeimage(imageName) {
+        const mainimage = document.getElementById('main-img')
+        mainimage.src = imageName;
+    }
 
+    function inc() {
+        const quantityText = document.getElementById("quantity-text");
+        const showQuantity = document.getElementById("show-quantity");
+        const showTotal = document.getElementById("show-total");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity < 3) {
+            quantityText.innerText = ++quantity;
+        }
+        else {
+            alert("you cann't add more than 3 items ")
+        }
+        showQuantity.innerText = `Item: ${quantity}×90,000`;
+
+        showTotal.innerText = `Total: ${quantity * 90000}`;
+
+    }
+    function dec() {
+
+        const quantityText = document.getElementById("quantity-text");
+        const showQuantity = document.getElementById("show-quantity");
+        const showTotal = document.getElementById("show-total");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity > 1) {
+            quantityText.innerText = --quantity;
+        }
+        else {
+            alert("you cann't add less than 1 items")
+        }
+        showQuantity.innerText = `Item: ${quantity}×90,000`;
+        showTotal.innerText = `Total: ${quantity * 90000}`;
+
+    }
             /* card4-script end*/
 
 
