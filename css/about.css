@@ -162,7 +162,11 @@ text-align: center;
   }
 
 
-
+  .profie-image-style{
+    height:200px;
+    width:200px; 
+    border-radius: 50%;
+  }
 
   
 
@@ -280,4 +284,4 @@ text-align: center;
             
         }
 
-  
+      
