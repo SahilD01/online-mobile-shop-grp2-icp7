@@ -12,6 +12,7 @@ function bushra1(X){
     if (X==0)
     document.getElementById("bushra0").style.display='block';
 else
+document.getElementById("bushra0").style.display='none';
 }
 
 
