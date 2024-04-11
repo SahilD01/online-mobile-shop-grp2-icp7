@@ -138,9 +138,9 @@
                             <img src="../img/flagshippage-img/ph7.jpg" class="w-50 m-2 "
                                 onclick="changeimage3('../img/flagshippage-img/ph7.jpg')" />
                             - <img src="../img/flagshippage-img/ph8.jpg" class=" w-50 m-2"
-                                onclick="changeimage('../img/flagshippage-img/ph8.jpg')" />
+                                onclick="changeimage3('../img/flagshippage-img/ph8.jpg')" />
                             <img src="../img/flagshippage-img/ph9.jpg" class="w-50 m-2"
-                                onclick="changeimage('../img/flagshippage-img/ph9.jpg')" />
+                                onclick="changeimage3('../img/flagshippage-img/ph9.jpg')" />
                 
                         </div>
                     </div>
@@ -294,7 +294,28 @@
     /* card2-script end*/
 
     /* card3-script start*/
+    function changeimage3(imageName3) {
+        const mainimage3 = document.getElementById('main-img3')
+        mainimage3.src = imageName3;
+    }
 
+    function inc() {
+        const quantityText = document.getElementById("quantity-text");
+        const showQuantity = document.getElementById("show-quantity");
+        const showTotal = document.getElementById("show-total");
+        let quantity = parseInt(quantityText.innerText);
+        if (quantity < 3) {
+            quantityText.innerText = ++quantity;
+        }
+        else {
+            alert("you cann't add more than 3 items ")
+        }
+        showQuantity.innerText = `Item: ${quantity}×90,000`;
+
+        showTotal.innerText = `Total: ${quantity * 90000}`;
+
+    }
+    function dec() {
         /* card3-script end*/
 
         /* card4-script start*/
