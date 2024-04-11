@@ -19,6 +19,7 @@ function sahil1(X){
     if (X==0)
     document.getElementById("sahil0").style.display='block'; 
     else
+    document.getElementById("sahil0").style.display='none';
 }
 
 
