@@ -45,14 +45,14 @@
     color: #388e3c;
   }
  
-  
+  /* information card */
   .info-card{
     background-color: white;
-    width: auto;
+    width: 3090px;
     border-radius: 20px;
     height: auto;
     box-shadow: 0 0 10px rgb(0,0,0,0.2);
-    margin: 30px auto;
+    margin-left: 15px;
     border-color: 2px  #000;
     padding: 5px;
 
@@ -95,6 +95,9 @@
     opacity: 1;
   }
   
+  .img-margin{
+    
+  }
   /* Clear floats after the columns */
   .row:after {
     content: " ";
@@ -102,7 +105,7 @@
     clear: both;
   }
   .img-height{
- width: 40%;
+ width: 4%;
  padding: 5px;
  margin-left: ;
   }
