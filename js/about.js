@@ -28,6 +28,7 @@ function sahil1(X){
 
 function rutuja1(X){
     if (X==0)
+    document.getElementById("rutuja0").style.display='block';
 }
 
 
