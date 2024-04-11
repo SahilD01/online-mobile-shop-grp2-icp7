@@ -34,8 +34,10 @@ function rutuja1(X){
     return;
 }
 
-function rutik1(X)
-
-
+function rutik1(X){
+if (X==0)
+document.getElementById("rutik0").style.display='block';
+else
+}
 
 
