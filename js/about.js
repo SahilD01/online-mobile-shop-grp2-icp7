@@ -59,3 +59,12 @@ return;
 }
 
 
+function kanchan1(X){
+    if (X==0)
+    document.getElementById("kanchan0").style.display='block';
+    else
+    document.getElementById("kanchan0").style.display='none';
+return;
+
+}
+
