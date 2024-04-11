@@ -340,10 +340,10 @@
         mainimage4.src = imageName4;
     }
 
-    function inc() {
-        const quantityText = document.getElementById("quantity-text");
-        const showQuantity = document.getElementById("show-quantity");
-        const showTotal = document.getElementById("show-total");
+    function inc4() {
+        const quantityText = document.getElementById("quantity-text4");
+        const showQuantity = document.getElementById("show-quantity4");
+        const showTotal = document.getElementById("show-total4");
         let quantity = parseInt(quantityText.innerText);
         if (quantity < 3) {
             quantityText.innerText = ++quantity;
@@ -351,7 +351,7 @@
         else {
             alert("you cann't add more than 3 items ")
         }
-        showQuantity.innerText = `Item: ${quantity}×90,000`;
+        showQuantity.innerText = `Item: ${quantity}×80,000`;
 
         showTotal.innerText = `Total: ${quantity * 90000}`;
 
