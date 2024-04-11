@@ -31,6 +31,7 @@ function rutuja1(X){
     document.getElementById("rutuja0").style.display='block';
     else
     document.getElementById("rutuja0").style.display='none';
+    return;
 }
 
 
