@@ -38,6 +38,7 @@ function rutik1(X){
 if (X==0)
 document.getElementById("rutik0").style.display='block';
 else
+document.getElementById("rutik0").style.display='none';
 }
 
 
