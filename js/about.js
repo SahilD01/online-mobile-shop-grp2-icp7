@@ -8,7 +8,9 @@ return;
 }
 
 
-function bushra1(X)
+function bushra1(X){
+    if (X==0)
+}
 
 
 
