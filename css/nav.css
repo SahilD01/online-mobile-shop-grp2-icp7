@@ -8322,24 +8322,6 @@
         .social-media p a:hover span {
           color: #fff; }
   
-  .searchform {
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    border-radius: 40px; }
-    @media (min-width: 992px) {
-      .searchform {
-        width: 300px; } }
-    .searchform .form-control {
-      width: calc(100% - 50px);
-      border: none;
-      background: #fff !important;
-      color: rgba(0, 0, 0, 0.7) !important;
-      font-size: 14px; }
-      .searchform .form-control::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: rgba(0, 0, 0, 0.7) !important; }
-      
   
 
       
