@@ -1,10 +1,10 @@
 function datta1(X){
-    if(X==0)
-    document.getElementById('datta').style.display='block';
+    if(X==1)
+    document.getElementById('datta').style. visibility='visible';
   
   
 else
-document.getElementById('datta').style.display='none';
+document.getElementById('datta').style.visibility='hidden';
 return;
 }
 
