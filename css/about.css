@@ -136,6 +136,10 @@ text-align: center;
     width:200px; 
     border-radius: 50%;
   }
+  .full-stack-name{
+    font-size: 20px;
+    color:#093379;
+  }
   @media screen and (max-width: 700px) {
     .first-info{
         justify-content: center;
