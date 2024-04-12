@@ -59,7 +59,13 @@
     
   }
   .pos{
-    margin-left: 15%;
+    margin-left: 25%;
+  }
+  .pos1{
+    margin-left: 5%;
+  }
+  .padding{
+    padding-left: 15%;
   }
 
   .edit-btn{
