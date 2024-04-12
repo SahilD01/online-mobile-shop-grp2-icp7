@@ -18,6 +18,9 @@
     display: inline-block;
   }
   
+  .space-adjust{
+    
+  }
   /* The grid: Four equal columns that floats next to each other */
   .column {
     float: left;
