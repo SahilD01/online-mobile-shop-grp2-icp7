@@ -9,6 +9,9 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" href="../css/accessory.css">
+
     <style>
         .add-btn {
             color: #ffff;
@@ -19,11 +22,6 @@
             margin-top: 5px;
             margin-left: 50px;
             border-radius: 20px;
-        }
-
-        .mainImg1 {
-            width: 450px;
-            height: 550px;
         }
     </style>
 </head>
@@ -74,24 +72,31 @@
             </div>
         </nav>
         <!-- Navbar -->
+
         <section class="Product container my-4 pt-4">
             <div style="display: flex;">
                 <div class="mainImg1">
-                    <img src="../img/covers/poco1.png" id="changeImg" class="mainImg1">
+                    <img src="../img/Accessory-page/acc5.png" id="changeImg"
+                        class="mainImg accessory1-height">
                 </div>
                 <div>
                     <span class="product-title">
-                        <p class="display-6 fw-semibold" style="color: black;">Rainbow Genuine Liquid Snap Case for
-                            PocoX5(5G)<span>
+                        <p class="display-6 fw-semibold" style="color: black;">Moonwalk Single Wireless Mic
+                            <span>
                             </span>
-                        <div class="price fs-4">
-                            <p> &nbsp;₹199</p>
+                        <div class="price fs-4 " id="price">
+                            ₹ <span >999 </span>
                         </div>
+                        <span>
+                            <p id="show-quantity" class="quantity-total">1 x 999</p>
+                            <p id="show-total" class="quantity-total">Total:999</p>
+                        </span>
                         <div style="display: flex; margin: 5px;">
                             <div>
                                 <span>
                                     <h5>QTY</h5>
                                 </span>
+                              
                             </div>
                             <div class="Product-btn1" style="margin-left: 15px;">
                                 <span style="cursor: pointer;">
@@ -106,14 +111,14 @@
                                 <button type="button" class="add-btn" onclick="add()">Add to Cart</button>
                             </div>
                         </div><br>
+
                         <div class="product-description">
                             <span>
                                 <h2>About this item</h2>
                                 <ul>
-                                    <li>Thin & light Poly-carbonate case</li>
-                                    <li> Smooth & seam-free surface</li>
-                                    <li> Photo-realistic print quality</li>
-                                    <li> Hassle-free replacements</li>
+                                    <li>The 3.5mm TRRS Jack of this tiny microphone</li>
+                                    <li> Pick up sounds from your environment easily</li>
+                                    <li> QUALITY SOUND RECORDINGS!</li>
                                     <li> Delivery in 5-7 working days</li>
                                 </ul>
                             </span>
@@ -122,9 +127,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
-        <script src=".\..\js\pocoByNow.js"></script>
+            
+        <!-- script  -->
 
+        <script src="../js/accessory.js"></script>
 
+        <!-- script  -->
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white" style="background-color: #252525">
             <!-- Grid container -->
@@ -134,19 +142,14 @@
                     <!--Grid row-->
                     <div class="row">
                         <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Pages</h6>
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Company name
+                            </h6>
                             <p>
-                                <a class="text-white" href="/index.html">Home</a>
-                            </p>
-                            <p>
-                                <a class="text-white" href="../pages/accessory.html">Accessories</a>
-                            </p>
-                            <p>
-                                <a class="text-white" href="../pages/offer.html">Offer</a>
-                            </p>
-                            <p>
-                                <a class="text-white" href="../pages/covers.html">Cover</a>
+                                Here you can use rows and columns to organize your footer
+                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -157,16 +160,16 @@
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
                             <p>
-                                <a class="text-white" href="../pages/flagship.html">Smartphones</a>
+                                <a class="text-white">MDBootstrap</a>
                             </p>
                             <p>
-                                <a class="text-white" href="../pages/covers.html">Covers</a>
+                                <a class="text-white">MDWordPress</a>
                             </p>
                             <p>
-                                <a class="text-white" href="../pages/accessory.html">Airdopes</a>
+                                <a class="text-white">BrandFlow</a>
                             </p>
                             <p>
-                                <a class="text-white" href="../pages/accessory.html">Accessories</a>
+                                <a class="text-white">Bootstrap Angular</a>
                             </p>
                         </div>
                         <!-- Grid column -->
@@ -179,10 +182,10 @@
                                 Useful links
                             </h6>
                             <p>
-                                <a class="text-white" href="../pages/about.html">About-us</a>
+                                <a class="text-white">Your Account</a>
                             </p>
                             <p>
-                                <a class="text-white" href="../pages/contact.html">Contact Us</a>
+                                <a class="text-white">Become an Affiliate</a>
                             </p>
                             <p>
                                 <a class="text-white">Shipping Rates</a>
@@ -193,57 +196,62 @@
                         </div>
 
                         <!-- Grid column -->
-
                         <hr class="w-100 clearfix d-md-none" />
 
                         <!-- Grid column -->
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                            <p><i class="fas fa-home mr-3"></i> Ahilyanagar, 414111, MH</p>
-                            <p type="mail"><i class="fas fa-envelope mr-3"></i><a href="mobilemart.netlify.com"
-                                    class="footer-links">mobilemart.netlify.com</a></p>
-                            <p><i class="fas fa-phone mr-3"></i><a href="tel:+917776665554"> +91-777 666 5554</a></p>
-                            <p><i class="fas fa-print mr-3"></i><a href="tel:+919822582525"> +91-982 258 2525</a></p>
+                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
                         </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                Social Links
-                            </h6>
-                            <p>
-                                <a class="btn-floating " class="text-white" role="button"><i
-                                        class="fab fa-facebook-f"></i></a>
-                            </p>
-                            <p>
-                                <a class=" btn-floating " class="text-white" role="button"><i
-                                        class="fab fa-twitter"></i></a>
-
-                            </p>
-                            <p>
-                                <a class=" btn-floating " class="text-white" role="button"><i
-                                        class="fab fa-google"></i></a>
-                            </p>
-                            <p>
-                                <a class=" btn-floating " class="text-white" role="button"><i
-                                        class="fab fa-instagram"></i></a>
-                            </p>
-                        </div>
-
                         <!-- Grid column -->
                     </div>
                     <!--Grid row-->
                 </section>
                 <!-- Section: Links -->
+
                 <hr class="my-3">
 
-                <!-- Grid column -->
+                <!-- Section: Copyright -->
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <!-- Copyright -->
+                            <div class="p-3">
+                                © 2020 Copyright:
+                                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                            </div>
+                            <!-- Copyright -->
+                        </div>
+                        <!-- Grid column -->
 
-                <p class="text-center font-weight-bold">© 2024 Copyright: MobileMart.netlify.com</p>
+                        <!-- Grid column -->
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-facebook-f"></i></a>
 
-                <!-- Grid column -->
-                <!-- Grid container -->
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </section>
+                <!-- Section: Copyright -->
+            </div>
+            <!-- Grid container -->
         </footer>
         <!-- Footer -->
 
