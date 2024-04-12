@@ -64,6 +64,9 @@
   .pos1{
     margin-left: 5%;
   }
+  .padding{
+    padding-left: 15%;
+  }
 
   .edit-btn{
    cursor: pointer;
