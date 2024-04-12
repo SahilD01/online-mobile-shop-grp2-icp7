@@ -74,266 +74,167 @@
 
         <!-- Page Start -->
 
-        <!--Slide Start-->
+    
 
-        <div>
-            <h1 class="text-center m-3 font-weight-bold">Top Accessories</h1>
-        </div>
+        <!-- New Launch section 1 -->
 
-        <div>
-            <!-- Container for the image gallery -->
-            <div class="container">
+        <h3 class="text-center m-3 font-weight-bold">Accessory</h3>
+        <hr>
 
-                <!-- Full-width images with number text -->
-                <div class="mySlides">
-                    <div class="numbertext">1 / 6</div>
-                    <img src="../img/Accessory-page/mob1.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 6</div>
-                    <img src="../img/Accessory-page/MB1.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 6</div>
-                    <img src="../img/Accessory-page/MB3.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 6</div>
-                    <img src="../img/Accessory-page/mob5.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="../img/Accessory-page/mob6.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="../img/Accessory-page/MB6.jpg" style="width:100%">
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                <!-- Image text -->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-
-                <!-- Thumbnail images -->
-                <div class="row">
-                    <div class="column">
-                        <img class="demo cursor" src="../img/Accessory-page/mob1.jpg" style="width:100%"
-                            onclick="currentSlide(1)" alt="1/6">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="../img/Accessory-page/MB1.jpg" style="width:100%"
-                            onclick="currentSlide(2)" alt="2/6">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="../img/Accessory-page/MB3.jpg" style="width:100%"
-                            onclick="currentSlide(3)" alt="3/6">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="../img/Accessory-page/mob5.jpg" style="width:100%"
-                            onclick="currentSlide(4)" alt="4/6">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="../img/Accessory-page/mob6.jpg" style="width:100%"
-                            onclick="currentSlide(5)" alt="5/6">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="../img/Accessory-page/MB6.jpg" style="width:100%"
-                            onclick="currentSlide(6)" alt="6/6">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-
-            // Next/previous controls
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("demo");
-                let captionText = document.getElementById("caption");
-                if (n > slides.length) { slideIndex = 1 }
-                if (n < 1) { slideIndex = slides.length }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
-            }
-        </script>
-
-        <!--Slide End-->
-
-
-
-
-       <!-- New Launch section 1 -->
-
-       <h3 class="text-center m-3 font-weight-bold">LATEST LAUNCHES</h3>
-       <hr>
-
-       <div class="container">
-           <div class="row">
-               <div class="col-md-12">
-                   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-                       <!-- Wrapper for carousel items -->
-                       <div class="carousel-inner">
-                           <div class="item active">
-                               <div class="row">
-                                   <div class="col-sm-3 col-md-6 col-lg-3">
-                                       <div class="thumb-wrapper">
-                                           <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                           <div class="img-box">
-                                               <img src="../img/Accessory-page/se1.jpeg" class="img-responsive" alt="">
-                                           </div>
-                                           <div class="thumb-content">
-                                               <h4>Extendable Black Metal Selfie Stick</h4>
-                                               <p class="item-price"><del>₹999</del> <b> ₹899</b></p>
-                                               <button type="button" class="btn">Buy Now!</button>
-                                           </div>
-                                       </div>
-                                   </div>
-                                   <div class="col-sm-3 col-md-6 col-lg-3">
-                                       <div class="thumb-wrapper">
-                                           <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                           <div class="img-box">
-                                               <img src="../img/Accessory-page/acc5.jpg" class="img-responsive" alt="">
-                                           </div>
-                                           <div class="thumb-content ">
-                                               <h4>Moonwalk Single Wireless Mic</h4>
-                                               <p class="item-price"><del>₹1199</del> <b>₹999</b></p>
-                                               <button type="button" class="btn">Buy Now!</button>
-                                           </div>
-                                       </div>
-                                   </div>
-                                   <div class="col-sm-3 col-md-6 col-lg-3">
-                                       <div class="thumb-wrapper">
-                                           <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                           <div class="img-box">
-                                               <img src="../img/Accessory-page/acc11.jpg" class="img-responsive" alt="">
-                                           </div>
-                                           <div class="thumb-content">
-                                               <h4>Mobile Phone Bluetooth Gamepad</h4>
-                                               <p class="item-price"><del>₹1999</del> <b>₹1499</b></p>
-                                               <button type="button" class="btn">Buy Now!</button>
-                                           </div>
-                                       </div>
-                                   </div>
-                                   <div class="col-sm-3 col-md-6 col-lg-3">
-                                       <div class="thumb-wrapper">
-                                           <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
-                                           <div class="img-box">
-                                               <img src="../img/Accessory-page/acc6.jpg" class="img-responsive" alt="">
-                                           </div>
-                                           <div class="thumb-content">
-                                               <h4>Syska Power Bank With 10,000 Mhz </h4>
-                                               <p class="item-price"><del>₹2,999</del> <b>₹1,999</b></p>
-                                               <div class="button d-flex">
-                                                   <button type="button" class="btn ">Buy Now!</button>
-                                               </div>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       </div>
-
-       <!-- new lauch section end -->
-
-
-
-        <!-- Accessory section 2-->
-
-        <h3 class="text-center m-3 font-weight-bold">Mobile Covers</h3>
-        <hr />
-
-        <div class="container rounded mb-3">
+        <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="../img/Accessory-page/cov4.jpg" alt="headphones" class="card-image-top">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">Samsung Galaxy</h2>
-                            <p class="card-text text-center">Latest Stylish Phone case Waterproof Mobile Cover</p>
-                            <h5 class="text-center"><del>₹1999.00</del> -₹989.00</h5>
-                            <div class="button d-flex">
-                                <button type="button" class="btn ">Buy Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="../img/Accessory-page/cov1.jpg" alt="power bank" class="card-image-top">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">Mickey Realme C12 </h2>
-                            <p class="card-text text-center">Realme C12 Mobile Cover is made with high-quality</p>
-                            <h5 class="text-center"><del>₹999.00</del> -₹899.00</h5>
-                            <div class="button d-flex">
-                                <button type="button" class="btn ">Buy Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="../img/Accessory-page/cov2.jpg" alt="headphones" class="card-image-top">
-                        <div class="card-body">
-                            <h2 class="card-title text-center"> Samsung Galaxy</h2>
-                            <p class="card-text text-center">samsung Galaxy m20 mobile cover</p>
-                            <h5 class="text-center"><del>₹899.00</del> -₹799.00</h5>
-                            <div class="button d-flex">
-                                <button type="button" class="btn ">Buy Now!</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="../img/Accessory-page/cov3.jpg" alt="headphones" class="card-image-top">
-                        <div class="card-body">
-                            <h2 class="card-title text-center">Realme C12 Mobile</h2>
-                            <p class="card-text text-center">Buy Cute Mickey Realme C12 Mobile Cover </p>
-                            <h5 class="text-center"><del>₹599.00</del> -₹499.00</h5>
-                            <div class="button d-flex">
-                                <button type="button" class="btn ">Buy Now!</button>
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/se1.jpeg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Extendable Black Metal Selfie Stick</h4>
+                                                <p class="item-price"><del>₹999</del> <b> ₹899</b></p>
+                                                <button type="button" class="btn">Buy Now!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/acc5.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content ">
+                                                <h4>Moonwalk Single Wireless Mic</h4>
+                                                <p class="item-price"><del>₹1199</del> <b>₹999</b></p>
+                                                <button type="button" class="btn">Buy Now!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/acc11.jpg" class="img-responsive"
+                                                    alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Mobile Phone Bluetooth Gamepad</h4>
+                                                <p class="item-price"><del>₹1999</del> <b>₹1499</b></p>
+                                                <button type="button" class="btn">Buy Now!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/acc6.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Syska Power Bank With 10,000 Mhz </h4>
+                                                <p class="item-price"><del>₹2,999</del> <b>₹1,999</b></p>
+                                                <div class="button d-flex">
+                                                    <button type="button" class="btn ">Buy Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
 
-        <!-- Accessory section end -->
+        <!-- new lauch section end -->
+
+
+
+        <!-- New Launch section 2 -->
+
+        <h3 class="text-center m-3 font-weight-bold">New Launches</h3>
+        <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/cov4.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Cover for Samsung Galaxy M14 5G</h4>
+                                                <p class="item-price"><del>₹299</del> <b> ₹199</b></p>
+                                                <button type="button" class="btn">Buy Now!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/ne1.jpg" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content ">
+                                                <h4>Gaming Console For Mobile </h4>
+                                                <p class="item-price"><del>₹1199</del> <b>₹1099</b></p>
+                                                <button type="button" class="btn">Buy Now!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/ne2.jpg" class="img-responsive"
+                                                    alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Wire Headphones For Mobile</h4>
+                                                <p class="item-price"><del>₹199</del> <b>₹99</b></p>
+                                                <button type="button" class="btn">Buy Now!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-6 col-lg-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="../img/Accessory-page/ne3.webp" class="img-responsive" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Portable Chargers For Mobile </h4>
+                                                <p class="item-price"><del>₹799</del> <b>₹599</b></p>
+                                                <div class="button d-flex">
+                                                    <button type="button" class="btn ">Buy Now!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- new lauch section end -->
 
         <script>
             function inc() {
@@ -374,7 +275,7 @@
         <!-- Page End -->
 
 
-        
+
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white" style="background-color: #252525">
             <!-- Grid container -->
