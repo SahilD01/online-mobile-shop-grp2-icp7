@@ -72,7 +72,7 @@
   color:#0000;
 }
   .second-part{
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
   display:flex;
   height: auto;
   width:100%;
@@ -103,10 +103,10 @@
   
   .text2{
     
-font-size: 30px;
+ font-size: 30px;
 
  text-align: center;
-  justify-content: center;
+ justify-content: center;
  padding:3px;
  border: 1px solid black;
  margin-bottom: 20px;
@@ -141,7 +141,7 @@ font-size: 30px;
     background: #fff;
     margin: 10px auto;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   
     width: 100%;
     margin-top: 50px;
     border-radius: 0.5rem;
@@ -161,26 +161,22 @@ font-size: 30px;
   .two {
      color: rgb(255, 106, 0);
   }
-   
   .three {
      color: rgb(251, 255, 120);
   }
-   
   .four {
      color: rgb(255, 255, 0);
-  }
-   
+  } 
   .five {
      color: rgb(24, 159, 14);
   }
   .map iframe{
     box-shadow:  0px 0px 10px 1px black;
-    width:100%;
+    width:80%;
     height:300px;
+    margin-left: 150px ;
     margin-top: 100px;
-     
     }
-    
     .header{
       font-family: "Roboto", 'Open-sans';
     }
@@ -188,19 +184,12 @@ font-size: 30px;
  color: black;
  margin-left: 10px;
     }
-
-    
-
     @media screen and (max-width: 700px) {
-
       .image-part{
         margin-top: 100px;
           height:300px;
-          
-
         }
         .text2{
-    
           font-size: 20px;
            text-align: center;
             justify-content: center;
@@ -208,9 +197,7 @@ font-size: 30px;
            border: 1px solid black;
            margin-bottom: 10px;
            background-color:black;
-           color: white;
-         
-          
+           color: white;  
             }
             .star-cont{
               width:100%;

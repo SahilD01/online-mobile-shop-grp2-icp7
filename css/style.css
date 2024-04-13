@@ -1,14 +1,18 @@
 /* common btn */
 
 .btn{
-    color: #ffff;
-    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
     background: black;
     border: 1px solid ;
-    padding: 6px 20px;
+    padding: 10px 20px;
     margin-top: 5px;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 8401fc165df5016ceb32f9b0d5b833fc06016112
     border-radius: 20px;
+    margin-left: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -24,4 +28,14 @@
 }
 .card-image-top{
     border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    
+    /* height: 180px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative; */
+
 }
+
+  

@@ -1,0 +1,27 @@
+.moon-div{
+    background-color: black;
+    border-radius: 50%;
+    bottom: 20px;
+    left: 30px;
+}
+.moon{
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 11px;
+}
+@media screen and (max-width: 700px) {
+    .moon-div{
+        background-color: black;
+        border-radius: 50%;
+        bottom: 20px;
+        left: 30px;
+    }
+    .moon{
+        height: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 11px;
+    } 
+}
