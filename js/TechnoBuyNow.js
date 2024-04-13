@@ -29,3 +29,6 @@ function decrement() {
     showTotal.innerText=`Total: ${quantity * 299}  `
 
 }
+function add(){
+    alert("Your item is successfully added!")
+    }
