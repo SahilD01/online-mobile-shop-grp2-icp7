@@ -10,61 +10,17 @@ function updateTheme() {
     document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
 
-    const nav = document.getElementById('nav');
-    if (nav) {
-      nav.style.backgroundColor = 'white';
-      nav.style.color = 'black';
-    }
-
-    const footer = document.getElementById('footer');
-    if (footer) {
-      footer.style.backgroundColor = 'white';
-      footer.style.color = 'black';
-    }
-  } else {
-    // Original state: white background, black text
-    document.body.style.backgroundColor = 'white';  
-    document.body.style.color = 'black';
-
-    const nav = document.getElementById('nav');
-    if (nav) {
-      nav.style.backgroundColor = 'black';
-      nav.style.color = 'white';
-    }
-
-    const footer = document.getElementById('footer');
-    if (footer) {
-      footer.style.backgroundColor = 'black';
-      footer.style.color = 'white';
-    }
-  }
-
-
-
-
   const head = document.getElementById('dark-light-main-header');
   if (head) 
   {
     head.style.backgroundColor = 'black';
     head.style.color ='white';
   }
-  else  
-  {
-    head.style.backgroundColor ='white';
-    head.style.color ='black';
-  }
+  
+  else
+  head.style.color ='black';
 
-  const head1 = document.getElementById('dark-light-main-header');
-  if  (head1) 
-  {
-    head1.style.backgroundColor = 'white';
-    head1.style.color ='black';
-  }
-  else  
-  {
-    head1.style.backgroundColor ='black';
-    head1.style.color ='white';
-  }
+}
 }
 
 
