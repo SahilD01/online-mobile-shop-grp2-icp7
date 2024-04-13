@@ -10,6 +10,7 @@
     margin:10px ;
     justify-content: center;
     text-align: center;
+    
 }
 .info-cont{
     width:40%;
@@ -136,6 +137,19 @@ text-align: center;
     width:200px; 
     border-radius: 50%;
   }
+  .full-stack-name{
+    font-size: 20px;
+    color:#093379;
+  }
+  .social-icons-insta{
+  color:#fd1d1d;
+  }
+  .social-icons-linkedin{
+    color: blue;
+  }
+
+
+  
   @media screen and (max-width: 700px) {
     .first-info{
         justify-content: center;
