@@ -1,29 +1,34 @@
-.sign-in-body{
+/* Common styles for both desktop and mobile */
+.sign-in-body {
   margin-top: 50px;
 }
 
 .forms-container {
   position: relative;
   top: 100px;
-  width: 500px;
+  width: 100%; /* Set width to 100% to make it responsive */
+  max-width: 500px; /* Limit maximum width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
 }
 
-#main-container{
+#main-container {
   display: flex;
   flex-direction: row;
-  transition: flex-direction 3.5s linear;
-}
-.main-container-sections{
-  transition: all 3.5s linear;
 }
 
-.signup-form{
+.main-container-sections {
+  flex: 1; /* Let each section take equal space */
+}
+
+.signup-form {
   display: none;
 }
-#btn-sign{
+
+#btn-sign {
   padding: 10px 20px;
   background-color: #252525;
 }
+
 .title {
   font-size: 30px;
 }
@@ -37,7 +42,8 @@
 }
 
 .username-field {
-  width: 300px;
+  width: 100%; /* Make the input fields responsive */
+  max-width: 300px; /* Limit maximum width for larger screens */
   height: 50px;
   border-radius: 25px;
 }
@@ -47,57 +53,13 @@
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  width: 150px;
+  width: 100%; /* Make the button responsive */
+  max-width: 150px; /* Limit maximum width for larger screens */
   background-color: #252525;
   color: white;
-
 }
 
 .social-icon {
   height: 50px;
   width: 50px;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  color: #333;
-  text-decoration: none;
-  font-size: 25px;
-  border: 1px solid black;
-  border-radius: 50px;
-  padding: 5px 10px;
-}
-
-@keyframes slideIn {
-  0% {
-      opacity: 0;
-      transform: translateY(-50px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
-
-.signin-form,
-.signup-form {
-  animation: slideIn 1s forwards;
-}
-
-
-@keyframes Image {
-  0% {
-      opacity: 0;
-  }
-  
-  100% {
-      opacity: 1;
-  }
-}
-
-.main-container-sections {
-  animation: slideIn 1s forwards;
-}
-
-.main-container-sections img {
-  animation: Image 2s forwards;
-}
+  justify-content: 
