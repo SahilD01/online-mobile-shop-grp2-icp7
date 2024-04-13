@@ -1,44 +1,31 @@
 
-        //Product Card Quantity Counter//
-        const quantityElement = document.getElementById("quantity");
-        function increment() {
-            let quantity = parseInt(quantityElement.innerText);
-            if (quantity < 10) {
-                quantityElement.innerText = ++quantity;
-            }
-            else {
-                alert("You can't Add more than 10 item!")
-            }
-
-        }
-        function decrement() {
-            let quantity = parseInt(quantityElement.innerText);
-            if (quantity > 1) {
-                quantityElement.innerText = --quantity;
-            }
-            else {
-                alert("You can't Add less than 1 item!")
-            }
-
-        }
-       function add(){
-        alert("Your item is successfully added!")
-        }
-
-
-        function blackBtn(){
-        document.getElementById('changeImg').src = '/Images/mobilepic/mainpic.jpg';
-      }
-    
-        function blueBtn(){
-        document.getElementById('changeImg').src = '/Images/mobilepic/w.jpeg';
-    
-        }
-
-        function yellowBtn(){
-        document.getElementById('changeImg').src = '/Images/mobilepic/y.jpg';
+//Product Card Quantity Counter//
+const quantityElement = document.getElementById("quantity");
+function increment() {
+    let quantity = parseInt(quantityElement.innerText);
+    const showQuantity = document.getElementById("show-quantity");
+    const showTotal = document.getElementById("show-total");
+    if (quantity < 10) {
+        quantityElement.innerText = ++quantity;
     }
-    function redBtn(){
-        document.getElementById('changeImg').src = '/Images/mobilepic/r.jpg';
+    else {
+        alert("You can't Add more than 10 item!")
     }
- 
+    showQuantity.innerText = `${quantity} x 299`;
+    showTotal.innerText=`Total: ${quantity * 299} `
+
+}
+function decrement() {
+    let quantity = parseInt(quantityElement.innerText);
+    const showQuantity = document.getElementById("show-quantity");
+    const showTotal = document.getElementById("show-total");
+    if (quantity > 1) {
+        quantityElement.innerText = --quantity;
+    }
+    else {
+        alert("You can't Add less than 1 item!")
+    }
+    showQuantity.innerText = `${quantity} x 299`;
+    showTotal.innerText=`Total: ${quantity * 299}  `
+
+}
