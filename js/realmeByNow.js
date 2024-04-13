@@ -9,8 +9,8 @@ function increment() {
     else {
         alert("You can't Add more than 10 item!")
     }
-    showQuantity.innerText = `${quantity} x 899`;
-    showTotal.innerText=`Total: ${quantity * 899} `
+    showQuantity.innerText = `${quantity} x 159`;
+    showTotal.innerText=`Total: ${quantity * 159} `
 
 }
 function decrement() {
@@ -23,8 +23,8 @@ function decrement() {
     else {
         alert("You can't Add less than 1 item!")
     }
-    showQuantity.innerText = `${quantity} x 899`;
-    showTotal.innerText=`Total: ${quantity * 899}  `
+    showQuantity.innerText = `${quantity} x 159`;
+    showTotal.innerText=`Total: ${quantity * 159}  `
 
 }
 

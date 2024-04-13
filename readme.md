@@ -8,3 +8,10 @@
 1)  The most obvious reason that the future of mobile shopping is important is that the usage of mobile phones is increasing worldwide.
 2) More people have internet access now and with the internet, it is easier to shop online from mobile phones. 
 3) The usage of mobile phones is only going to stop in the near future.
+
+
+### Homepage Page
+![screenshots](.\img\readme-file\Homepage.png)
+
+### Gaming Page
+![screenshots](.\img\readme-file\Gaming.png)
