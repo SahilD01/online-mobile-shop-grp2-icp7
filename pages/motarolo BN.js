@@ -1,3 +1,5 @@
+
+//Product Card Quantity Counter//
 const quantityElement = document.getElementById("quantity");
 function increment() {
     let quantity = parseInt(quantityElement.innerText);
@@ -9,8 +11,8 @@ function increment() {
     else {
         alert("You can't Add more than 10 item!")
     }
-    showQuantity.innerText = `${quantity} x 899`;
-    showTotal.innerText=`Total: ${quantity * 899} `
+    showQuantity.innerText = `${quantity} x 249`;
+    showTotal.innerText=`Total: ${quantity * 249} `
 
 }
 function decrement() {
@@ -23,12 +25,7 @@ function decrement() {
     else {
         alert("You can't Add less than 1 item!")
     }
-    showQuantity.innerText = `${quantity} x 899`;
-    showTotal.innerText=`Total: ${quantity * 899}  `
+    showQuantity.innerText = `${quantity} x 249`;
+    showTotal.innerText=`Total: ${quantity * 249}  `
 
 }
-
-function add(){
-alert("Your item is successfully added!")
-}
-
