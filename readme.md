@@ -2,7 +2,7 @@
 
 ### Introduction
 
-    Online mobile shopping   is a form of   electronic commerce which allows consumers to directly buy goods from a seller over the internet   using android phones. This project deals with developing an e-commerce   website for online different types of products. It provides the user with a catalog of different types   of products available for purchase in the store.
+ Online mobile shopping   is a form of   electronic commerce which allows consumers to directly buy goods from a seller over the internet   using android phones. This project deals with developing an e-commerce   website for online different types of products. It provides the user with a catalog of different types   of products available for purchase in the store.
 
 ### Scope
 1)  The most obvious reason that the future of mobile shopping is important is that the usage of mobile phones is increasing worldwide.
