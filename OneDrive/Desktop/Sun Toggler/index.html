@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+ 
+            height: 100vh; 
+        }
+
+        .h1{
+            font-size: 80px;
+            text-align: center;
+            margin-bottom: -10px;
+        }
+
+        .container{
+            
+            width: 400px;
+            background-color: rgb(253, 253, 253);
+            display: block;
+            margin: 40px auto;
+            padding: 50px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);  
+            flex-direction: column; 
+            text-align: center; 
+        }
+
+       .btn-container{
+            justify-content: center;
+            display: flex;
+       }
+        button {  
+            background-color: #007bff; 
+            color: #fff; 
+            border: none; 
+            padding: 12px 20px; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            margin: 10px;
+        } 
+        
+        @media screen and (max-width:750) {
+            .container{
+                width: 75%;
+            }
+            .mood-img{
+                height: 100px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 class="h1">Sun Toggler</h1>
+
+    <div class="container">
+        <img src="Images\Angry sun.png" class="mood-img" id="mood" height="200px" width="200px" />
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-angry" onclick="angry()" >Angry</button>
+        <button class="btn-happy" onclick="happy()">Happy</button>
+        <button class="btn-sad" onclick="sad()">Sad</button>
+        <button class="btn-cry" onclick="cry()">Crying</button>
+    </div>
+
+    <script>
+      function happy(){
+        const happy = document.getElementById('mood');
+        mood.src = 'Images/happy sun.png';
+      };
+
+      function angry(){
+        const angry = document.getElementById('mood');
+        mood.src = 'Images/Angry sun.png';
+      };
+
+      function sad(){
+        const sad = document.getElementById('mood');
+        mood.src = 'Images/sad sun.png';
+      };
+
+      function cry(){
+        const cry = document.getElementById('mood');
+        mood.src = 'Images/crying sun.png';
+      };
+    
+    </script>
+    
+    </div>
+</body>
+</html>
+
